@@ -1,0 +1,161 @@
+/* pages/drinkshow/drinkshow.wxss */
+.drinkshowTop{
+  height: 20em;
+  background-color: #efac37;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
+}
+.border{
+  width: 10em;
+  height: 10em;
+  border-radius: 50%;
+  border: 4em solid #ed9700;
+  position: absolute;
+  top: -1em;
+  right: -2em;
+}
+.drinkshowTopcon{
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  transform: translate(0,-20%);
+  color: #fff;
+}
+.drinkshowTopcon .drinkshowTopTitle {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.drinkshowTopcon .drinkshowTopText{
+  font-size:0.75em ;
+  margin: 0.5em 0;
+  opacity: 0.75;
+}
+
+.drinkprice{
+  margin-top: 1em;
+}
+.drinkprice .drinkpriceNum .Symbol{
+  font-size: 0.75em;
+  opacity: 0.75;
+}
+.drinkprice .drinkpriceNum .drinkpriceN{
+  font-size:4em ;
+  font-weight: bold;
+  vertical-align: top;
+  display: inline-block;
+}
+
+.drinkshowContent{
+  position: relative;
+  top: -2em;
+  border-radius: 1.5em 1.5em 0 0;
+  z-index: 5;
+  background-color: #fff;
+}
+
+.drinkshowPic {
+  position: absolute;
+  z-index: 6;
+  right: 0em;
+  top: -12em;
+}
+.drinkshowPic image{
+  width: 12em;
+  height: 16em;
+}
+
+.drinkshowCon{
+  padding: 1em 1em 2.5em;
+}
+.drinkshowTitle{
+  font-size: 1.5em;
+  color: #252525;
+  padding: 0.5em 0;
+}
+.drinkshowCon .p{
+  font-size: 0.75em;
+  color: #b3b3b3;
+}
+
+.drinkshowcard{
+  display: flex;
+  margin: 1em 0;
+}
+.drinkshowcardItem{
+  background-color: #efab3718;
+  flex: 1;
+  margin: 0 0.75em 0 0;
+  text-align: center;
+  padding:1.5em 1em;
+  border-radius: 1em;
+}
+.drinkshowcardpic image{
+  width: 2em;
+  height: 2em;
+}
+.drinkshowcarText{
+  color: #efac37;
+  font-size: 0.85em;
+}
+.drinkshowServicep .p{
+  margin-bottom: 1em;
+}
+
+.buybtn{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 0 0.3em rgba(0,0,0,0.1);
+  display: flex;
+}
+.buy{
+  text-align: center;
+  padding: 0.75em 0;
+  margin: 0.5em;
+  background-color: #efac37;
+  color: #fff;
+  border-radius: 5em;
+  flex: 1;
+}
+.cart{
+  background-color: rgb(245, 35, 8);
+}
+
+.buycart{
+  position: fixed;
+  right: 0.5em;
+  bottom: 3em;
+  font-size: 1.5em;
+  background-color: #fff;
+  box-shadow: 0 0 1em rgba(0,0,0,0.15);
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius:50% ;
+}
+.buycartnum{
+  width: 1em;
+  height: 1em;
+  background-color: rgb(245, 35, 8);
+  font-size:0.5em ;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 1em;
+  padding: 0.2em;
+  color: #fff;
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+
+
+
+

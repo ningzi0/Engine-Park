@@ -1,0 +1,4 @@
+<view class="no">
+    <image src="/assets/images/ico/no.png" mode="aspectFill"></image>
+    <view class="p">暂未开启，敬请期待</view>
+</view>

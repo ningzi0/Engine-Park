@@ -1,0 +1,89 @@
+<view bindtap='returnPre' >
+    <image src='/assets/images/ico/return.png' mode='aspectFill' class='back-pre'></image>
+</view>
+
+<view class="lookcar">
+  <view class="lookcarContent">
+      <view class="lookcarTitle">预约看车</view>
+
+      <view class="lookcarUl">
+          <view class="li">
+              <text>品牌</text>
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                  {{array[index]}}
+                </view>
+              </picker>
+          </view>
+          <view class="li">
+              <text>型号</text>
+              <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+                <view class="picker">
+                  {{array2[index2]}}
+                </view>
+              </picker>
+          </view>
+          <view class="li">
+              <text>手机</text>
+              <input type="number" placeholder="请输入手机号" placeholder-style="color:#000"></input>
+          </view>
+          <view class="li">
+              <text>日期</text>
+              <picker mode="date" value="{{date}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange">
+                  <view class="picker">{{date}}</view>
+              </picker>
+          </view>
+      </view>
+      
+
+
+      <view class="submit">
+          <view class="submit-text">提交</view>
+      </view>
+
+
+
+  </view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,110 @@
+<!--pages/my/my.wxml-->
+<view bindtap='returnPre' >
+    <image src='/assets/images/ico/return.png' mode='aspectFill' class='back-pre'></image>
+</view>
+
+<view class="myTop">
+    <view class="myTopbg">
+        <image src="/assets/images/other/mytopbg.jpg" mode="aspectFill"></image>
+        <view class="blackmask"></view>
+    </view>
+
+    <view class="myTopCon">
+        <view class="headpic">
+            <navigator>
+                <image src="/assets/images/other/headpic.jpg" mode="aspectFill"></image>
+            </navigator>
+            <view class="headText">Lucile Barrett</view>
+        </view>
+
+        <view class="myTopUl">
+            <block wx:for="{{myicoItem}}">
+                <view class="li">
+                    <navigator url="{{item.myurl}}">
+                        <image src="{{item.myicoImg}}" mode="aspectFill"></image>
+                        <text>{{item.myicoText}}</text>
+                        <view class="num">{{item.myicoNum}}</view>
+                    </navigator>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
+
+
+
+<view class="mylist">
+    <view class="mycar">
+        <view class="mylistTit clearfix">
+          <text>我的车辆</text>
+          <navigator class="f-r">添加 + </navigator>
+        </view>
+        <view class="mylistUl">
+            <view class="mylistLi">
+                <image src="/assets/images/ico/mylistico1.png" mode="aspectFill"></image>
+                <text>雷克萨斯LS-2020款 350 豪华版 国VI</text>
+            </view>
+        </view>
+    </view>
+    <view class="mycarlife">
+        <view class="mylistTit">
+          <text>我的车生活</text>
+        </view>
+        <view class="mylistUl">
+            <block wx:for="{{mylistArray}}">
+                <view class="mylistLi">
+                    <navigator url="{{item.mylistUrl}}">
+                        <image src="{{item.mylistIco}}" mode="aspectFill"></image>
+                        <text>{{item.mylistText}}</text>
+                    </navigator>
+                </view>
+            </block>
+        </view>
+    </view>
+
+</view>
+<view class="mygarage">
+    <view class="mylistTit">
+        <text>我的车库</text>
+    </view>
+    <view class="mygarageCon">
+        <view class="mygarLi">
+            <navigator class="clearfix" url="/pages/carshow/carshow">
+                <view class="mygarcarinfo f-l">
+                    <view class="time">2019</view>
+                    <view class="text">雷克萨斯 RC 300 锋尚版</view>
+                    <view class="price">￥44,6000</view>
+                </view>
+                <image class="f-r" src="/assets/images/other/carshow4.jpg" mode="aspectFill"></image>
+            </navigator>
+        </view>
+
+        <view class="mygarLi">
+            <navigator class="clearfix" url="/pages/carshow/carshow">
+                <view class="mygarcarinfo f-r">
+                    <view class="time">2019</view>
+                    <view class="text">雷克萨斯 RC 300 锋尚版</view>
+                    <view class="price">￥44,6000</view>
+                </view>
+                <image class="f-l" src="/assets/images/other/carshow3.jpg" mode="aspectFill"></image>
+            </navigator>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

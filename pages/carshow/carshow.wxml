@@ -1,0 +1,149 @@
+<!--pages/carshow/carshow.wxml-->
+<view bindtap='returnPre' >
+    <image src='/assets/images/ico/return.png' mode='aspectFill' class='back-pre'></image>
+</view>
+
+<view class="carshowbanner">
+    <view class="img">
+        <image src="/assets/images/other/carshow1.jpg" mode="aspectFill"></image>
+        <image class="img2" src="/assets/images/other/carshow2.png" mode="aspectFill"></image>
+    </view>
+</view>
+
+<view class="introduce">
+    <view class="h1">豪华和紧凑型混合动力车</view>
+    <view class="introduceText">五门紧凑型城市SUV结合了精致的都市外观，独特的雷克萨斯工艺和最先进的技术。</view>
+    <view class="priceBtn">￥360000</view>
+</view>
+
+
+<view class="carshowCard">
+    <view class="item">
+        <view class="img">
+            <image src="/assets/images/ico/ico1.jpg" mode="aspectFill"></image>
+        </view>
+        <text>5座</text>
+    </view>
+    <view class="item">
+        <view class="img">
+            <image src="/assets/images/ico/ico2.jpg" mode="aspectFill"></image>
+        </view>
+        <text>5门</text>
+    </view>
+    <view class="item">
+        <view class="img">
+            <image src="/assets/images/ico/ico3.jpg" mode="aspectFill"></image>
+        </view>
+        <text>前驱</text>
+    </view>
+    <view class="item">
+        <view class="img">
+            <image src="/assets/images/ico/ico4.jpg" mode="aspectFill"></image>
+        </view>
+        <text>3气囊</text>
+    </view>
+</view>
+
+
+
+<view class="carparameter">
+    <view class="title clearfix">
+        <text class="f-l">车辆参数：</text>
+        <navigator class="f-r">更多</navigator>
+    </view>
+
+    <view class="carparameterCon">
+        <view class="ul">
+            <view class="li">√ 厂商：雷克萨斯</view>
+            <view class="li">√ 级别：紧凑型SUV</view>
+            <view class="li">√ 能源类型：汽油</view>
+            <view class="li">√ 最大功率：127KW</view>
+            <view class="li">√ 最大扭矩：207N·m</view>
+            <view class="li">√ 变速箱：CVT无级变速</view>
+            <view class="li">√ 最高车速：190</view>
+            <view class="li">√ 百公里加速：9.2s</view>
+        </view>
+    </view>
+
+    <view class="carshowpic">
+        <view class="carshowpicScroll">
+            <view class="pic">
+                <image src="/assets/images/other/carshow3.jpg" mode="aspectFill"></image>
+            </view>
+            <view class="pic">
+                <image src="/assets/images/other/carshow4.jpg" mode="aspectFill"></image>
+            </view>
+            <view class="pic">
+                <image src="/assets/images/other/carshow5.jpg" mode="aspectFill"></image>
+            </view>
+        </view>
+    </view>
+
+
+
+    <view class="carreport">
+        <view class="title clearfix">
+            <text class="f-l">质检报告：</text>
+            <navigator class="f-r">更多</navigator>
+        </view>
+        <view class="p">
+            <text class="b">车辆骨架：</text>
+            <text>车体整体对称性、后防撞梁、右C柱、行李箱底板、左后纵梁..</text>
+        </view>
+        <view class="p">
+            <text class="b">车身外观：</text>
+            <text>左后翼子板、右前轮、雾灯（左）、左后视镜、左后轮、雾灯..</text>
+        </view>
+        <view class="p">
+            <text class="b">功能部件：</text>
+            <text>全套钥匙、轮胎扳手及随车工具、中央集控、遥控器及功能..</text>
+        </view>
+        <view class="p">
+            <text class="b">启动检查：</text>
+            <text>车辆启动是否顺畅（时间少于5秒，或者一次启动）、车辆排..</text>
+        </view>
+        <view class="p">
+            <text class="b">底盘检查：</text>
+            <text>传动轴十字轴是否无松框、变速箱体是否无渗漏、转向节臂球..</text>
+        </view>
+    </view>
+
+    
+
+</view>
+
+
+<view class="carshowimg">
+    <view class="title clearfix">
+        <text class="f-l">车辆图片：</text>
+    </view>
+    <view class="carshowimgCon">
+        <image src="https://img4.bitautoimg.com/autoalbum/files/20180727/121/20180727133227322755308_6158003_16.jpg" mode="aspectFill"></image>
+        <image src="https://img3.bitautoimg.com/autoalbum/files/20180727/280/20180727133226322628296_6158002_16.jpg" mode="aspectFill"></image>
+        <image src="https://img2.bitautoimg.com/autoalbum/files/20180727/336/20180727133230323068303_6158001_16.jpg" mode="aspectFill"></image>
+        <image src="https://img1.bitautoimg.com/autoalbum/files/20180727/463/2018072713321332134297_6158000_16.jpg" mode="aspectFill"></image>
+        <image src="https://img4.bitautoimg.com/autoalbum/files/20180727/810/201807271332263226185311_6157999_16.jpg" mode="aspectFill"></image>
+        <image src="https://img3.bitautoimg.com/autoalbum/files/20180727/010/201807271332283228174303_6157998_16.jpg" mode="aspectFill"></image>
+        <image src="https://img2.bitautoimg.com/autoalbum/files/20180727/915/201807271332283228148297_6157997_16.jpg" mode="aspectFill"></image>
+        <image src="https://img4.bitautoimg.com/autoalbum/files/20180727/516/201807271332543254149307_6157995_16.jpg" mode="aspectFill"></image>
+        <image src="https://img3.bitautoimg.com/autoalbum/files/20180727/041/20180727133312331274296_6157990_16.jpg" mode="aspectFill"></image>
+        <image src="https://img2.bitautoimg.com/autoalbum/files/20180727/570/201807271333133313151303_6157989_16.jpg" mode="aspectFill"></image>
+        <image src="https://img1.bitautoimg.com/autoalbum/files/20180727/714/201807271333183318206317_6157984_16.jpg" mode="aspectFill"></image>
+        <image src="https://img2.bitautoimg.com/autoalbum/files/20180727/072/20180727133403343196296_6157969_16.jpg" mode="aspectFill"></image>
+
+        <image src="https://img4.bitautoimg.com/autoalbum/files/20180727/158/20180727133601361128312_6158187_16.jpg" mode="aspectFill"></image>
+        <image src="https://img3.bitautoimg.com/autoalbum/files/20180727/610/201807271335483548244260_6158186_16.jpg" mode="aspectFill"></image>
+        <image src="https://img1.bitautoimg.com/autoalbum/files/20180727/897/201807271359155915228151_6158400_16.jpg" mode="aspectFill"></image>
+        <image src="https://img1.bitautoimg.com/autoalbum/files/20180727/788/20180727133558355896278_6158184_16.jpg" mode="aspectFill"></image>
+        <image src="https://img4.bitautoimg.com/autoalbum/files/20180727/098/201807271335543554137317_6158183_16.jpg" mode="aspectFill"></image>
+        <image src="https://img3.bitautoimg.com/autoalbum/files/20180727/774/201807271335573557206278_6158182_16.jpg" mode="aspectFill"></image>
+        <image src="https://img3.bitautoimg.com/autoalbum/files/20180727/706/20180727133606366102279_6158178_16.jpg" mode="aspectFill"></image>
+        <image src="https://img1.bitautoimg.com/autoalbum/files/20180727/078/20180727133609369102300_6158176_16.jpg" mode="aspectFill"></image>
+        <image src="https://img4.bitautoimg.com/autoalbum/files/20180727/595/20180727133608368126280_6158175_16.jpg" mode="aspectFill"></image>
+        <image src="https://img3.bitautoimg.com/autoalbum/files/20180727/920/20180727133609369176257_6158174_16.jpg" mode="aspectFill"></image>
+        <image src="https://img2.bitautoimg.com/autoalbum/files/20180727/785/201807271336133613110311_6158173_16.jpg" mode="aspectFill"></image>
+        <image src="https://img1.bitautoimg.com/autoalbum/files/20180727/086/201807271336123612107280_6158172_16.jpg" mode="aspectFill"></image>
+        <image src="https://img4.bitautoimg.com/autoalbum/files/20180727/504/201807271336133613250281_6158171_16.jpg" mode="aspectFill"></image>
+        <image src="https://img3.bitautoimg.com/autoalbum/files/20180727/234/201807271336153615164311_6158170_16.jpg" mode="aspectFill"></image>
+    </view>
+</view>

@@ -1,0 +1,134 @@
+<view class="indexTitle">
+    <view class="logo">
+        <image src="/assets/images/logo/logo.png" mode="aspectFit"></image>
+    </view>
+    <view class="inTitText">
+        <block wx:for="{{InTtiarray}}">
+            <navigator url="{{item.Inurl}}">
+                <text>{{item.Intit}}</text>
+                <text>{{item.Intext}}</text>
+            </navigator>
+        </block>
+    </view>
+</view>
+
+<view class="banner">
+    <swiper indicator-dots="true" autoplay="true" circular="true">
+        <block wx:for="{{bImgArray}}">
+            <swiper-item>
+                <image src="{{item.src}}" mode="aspectFill"></image>
+            </swiper-item>
+        </block>
+    </swiper>
+</view>
+
+<view class="tab">
+    <block wx:for="{{tabArray}}">
+        <navigator url="{{item.tabUrl}}">
+            <text>{{item.tabText}}</text>
+        </navigator>
+    </block>
+</view>
+
+<view class="menu">
+    <block wx:for="{{menuArray}}">
+        <view class="item">
+            <navigator url="{{item.url}}">
+                <view class="item-content">
+                    <view class="item-color">
+                        <image src="{{item.menuSrc}}" mode="aspectFill"></image>
+                    </view>
+                </view>
+                <text>{{item.menuText}}</text>
+            </navigator>
+        </view>
+    </block>
+</view>
+
+
+
+
+
+<view class="tab-Wrap">
+    <view class="tab">
+        <view class="tab-item">
+            <image src="/assets/images/ico/menu-active.png"></image>
+        </view>
+        <view class="tab-item">
+            <navigator url="/pages/my/my">
+                <image src="/assets/images/ico/myico.png"></image>
+            </navigator>
+        </view>
+    </view>
+
+    <view class="tabContent">
+        <view class="tabCon-item">
+            <navigator url="/pages/carshow/carshow">
+                <image src="/assets/images/other/car3.jpg" mode="aspectFill"></image>
+            </navigator>
+        </view>
+        <view class="tabCon-item">
+            <!-- <image src="/assets/images/other/carbg.jpg" mode="aspectFill"></image> -->
+            <navigator url="/pages/carshow/carshow">
+                <view class="carbgText">
+                    <view class="h3">每日精选车型</view>
+                    <view class="p">好车推荐 精选系列</view>
+                </view>
+            </navigator>
+        </view>
+        <view class="tabCon-item">
+            <navigator url="/pages/carshow/carshow">
+                <image src="/assets/images/other/car4.jpg" mode="aspectFill"></image>
+            </navigator>
+        </view>
+        <view class="tabCon-item">
+            <!-- <image src="/assets/images/other/carbg2.jpg" mode="aspectFill"></image> -->
+            <navigator url="/pages/drink/drink">
+                <view class="carbgText">
+                    <view class="h3">饮品推荐</view>
+                    <view class="p">引擎饮品 畅想其中</view>
+                </view>
+            </navigator>
+        </view>
+        <view class="tabCon-item">
+            <navigator url="/pages/drink/drink">
+                <image src="/assets/images/other/drink.jpg" mode="aspectFill"></image>
+            </navigator>
+        </view>
+        <view class="tabCon-item drink">
+            <navigator url="/pages/drink/drink">
+                <text>Drink</text>
+            </navigator>
+        </view>
+        <view class="tabCon-item">
+            <navigator url="/pages/bar/bar">
+                <image src="/assets/images/other/beer1.jpg" mode="aspectFill"></image>
+            </navigator>
+        </view>
+        <view class="tabCon-item drink">
+            <navigator url="/pages/bar/bar">
+                 <text>Beer</text>
+            </navigator>
+        </view>
+        <view class="tabCon-item">
+            <navigator url="/pages/bar/bar">
+                <image src="/assets/images/other/beer2.jpg" mode="aspectFill"></image>
+            </navigator>
+        </view>
+    </view>
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+

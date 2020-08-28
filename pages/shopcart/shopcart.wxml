@@ -1,0 +1,62 @@
+<view class="shopcart">
+    <view class="shopcartTitle">
+        <view class="shopcartH3">购物车</view>
+        <view class="shopcartText">合计3个商品，左滑移除购物车</view>
+    </view>
+
+
+    <view class="shopcartContent">
+        <block wx:key="item" wx:for="{{data}}">
+            <view class="shopcartItem" data-index='{{index}}' bindtouchstart="drawStart" bindtouchmove="drawMove" bindtouchend="drawEnd" style="right:{{item.right}}rpx">
+                <view class="shopcartpic">
+                    <image src="{{item.shopcartpic}}" mode="aspectFill"></image>
+                </view>
+                <view class="shopcartConText">
+                    <view class="h3">{{item.shopcartConTexth3}}</view>
+                    <view class="text">{{item.shopcartConTexttext}}</view>
+                    <view class="price">$ {{item.shopcartConTextprice}}</view>
+                </view>
+                <view class="shopcartnum">
+                    <view class="addnum">+</view>
+                    <input class="number" value="1"></input>
+                    <view class="reducenum">-</view>
+                </view>
+                <view class="remove" bindtap="delItem">删除 </view>
+            </view>
+        </block>
+    </view>
+
+
+
+    <view class="total">
+        <view class="totalItem">
+            <view class="totalText">合计</view>
+            <view class="totalprice">
+                <text class="fuhao">$</text>
+                <text class="num">35</text>
+            </view>
+        </view>
+        <view class="totalItem buyorder">下单</view>
+    </view>
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

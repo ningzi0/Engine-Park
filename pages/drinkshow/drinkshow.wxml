@@ -1,0 +1,89 @@
+<view bindtap='returnPre' >
+    <image src='/assets/images/ico/return2.png' mode='aspectFill' class='back-pre'></image>
+</view>
+
+<view class="drinkshowTop">
+    <view class="border"></view>
+    <view class="drinkshowTopcon">
+        <view class="drinkshowTopTitle">草莓珍珠</view>
+        <view class="drinkshowTopText">夏日冷饮·草莓珍珠奶茶</view>
+        <view class="drinkprice">
+            <view class="drinkpriceNum"><text class="Symbol">$</text><text class="drinkpriceN">12</text></view>
+        </view>
+    </view>
+</view>
+
+<view class="drinkshowContent">
+    
+    <view class="drinkshowPic">
+        <image src="/assets/images/other/drink1.png" mode="aspectFill"></image>
+    </view>
+
+    <view class="drinkshowCon">
+        <view class="drinkshowTitle">详情介绍</view>
+        <view class="p">奶茶也叫蒙古茶，是蒙古族牧民日常生活中不可缺少的饮料。奶茶所用的茶叶是青砖茶。砖茶含有丰富的维生素C、单宁、蛋白质、酸、芳香油等人体必须的营养成分。</view>
+    
+
+        <view class="drinkshowcard">
+            <view class="drinkshowcardItem">
+                <view class="drinkshowcardpic">
+                    <image src="/assets/images/ico/naicha.png" mode="aspectFill"></image>
+                </view>
+                <view class="drinkshowcarText">100ML</view>
+            </view>
+            <view class="drinkshowcardItem">
+                <view class="drinkshowcardpic">
+                    <image src="/assets/images/ico/reliang.png" mode="aspectFill"></image>
+                </view>
+                <view class="drinkshowcarText">低热量</view>
+            </view>
+            <view class="drinkshowcardItem">
+                <view class="drinkshowcardpic">
+                    <image src="/assets/images/ico/chaye.png" mode="aspectFill"></image>
+                </view>
+                <view class="drinkshowcarText">茶香浓郁</view>
+            </view>
+        </view>
+
+        <view class="drinkshowService">
+            <view class="drinkshowTitle">服务</view>
+            <view class="drinkshowServicep">
+                <view class="p">营造一种温暖而有归属感的文化，欣然接纳和欢迎每一个人。</view>
+                <view class="p">积极行动，勇于挑战现状，打破陈规，以创新方式实现公司与伙伴的共同成长。</view>
+                <view class="p">在每个连接彼此的当下，我们专注投入，开诚相见，互尊互敬。</view>
+                <view class="p">对于每件事，我们都竭尽所能，做到最好，敢于担当。</view>
+            </view>
+        </view>
+
+    </view>
+
+
+
+    <view class="buybtn">
+        <view class="buy cart">加入购物车</view>
+        <view class="buy">购买</view>
+    </view>
+
+
+    <view class="buycart">
+        <navigator url="/pages/shopcart/shopcart">
+            <view class="buycartIco">🛒</view>
+            <view class="buycartnum">1</view>
+        </navigator>
+    </view>
+    
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,178 @@
+{
+  "description": "项目配置文件",
+  "packOptions": {
+    "ignore": []
+  },
+  "setting": {
+    "urlCheck": true,
+    "es6": true,
+    "enhance": false,
+    "postcss": true,
+    "preloadBackgroundData": false,
+    "minified": true,
+    "newFeature": true,
+    "coverView": true,
+    "nodeModules": false,
+    "autoAudits": false,
+    "showShadowRootInWxmlPanel": true,
+    "scopeDataCheck": false,
+    "uglifyFileName": false,
+    "checkInvalidKey": true,
+    "checkSiteMap": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useMultiFrameRuntime": false,
+    "useApiHook": true,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "useIsolateContext": true,
+    "useCompilerModule": true,
+    "userConfirmedUseCompilerModuleSwitch": false,
+    "packNpmManually": false,
+    "packNpmRelationList": []
+  },
+  "compileType": "miniprogram",
+  "libVersion": "2.12.0",
+  "appid": "wx3bf15eed5dc65e0b",
+  "projectname": "%E5%BC%95%E6%93%8E%E5%85%AC%E5%9B%AD",
+  "debugOptions": {
+    "hidedInDevtools": []
+  },
+  "isGameTourist": false,
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
+  "condition": {
+    "search": {
+      "current": -1,
+      "list": []
+    },
+    "conversation": {
+      "current": -1,
+      "list": []
+    },
+    "plugin": {
+      "current": -1,
+      "list": []
+    },
+    "game": {
+      "currentL": -1,
+      "list": []
+    },
+    "gamePlugin": {
+      "current": -1,
+      "list": []
+    },
+    "miniprogram": {
+      "current": -1,
+      "list": [
+        {
+          "id": -1,
+          "name": "引擎公园首页",
+          "pathName": "pages/index/index",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": 1,
+          "name": "汽车详情",
+          "pathName": "pages/carshow/carshow",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "推荐车型",
+          "pathName": "pages/recommend/recommend",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "个人中心",
+          "pathName": "pages/my/my",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "酒吧",
+          "pathName": "pages/bar/bar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "饮品",
+          "pathName": "pages/drink/drink",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "饮品详情",
+          "pathName": "pages/drinkshow/drinkshow",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "购物车",
+          "pathName": "pages/shopcart/shopcart",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "拍摄影棚",
+          "pathName": "pages/camera/camera",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "保养",
+          "pathName": "pages/maintain/maintain",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "预约看车",
+          "pathName": "pages/lookcar/lookcar",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "租车",
+          "pathName": "pages/rental/rental",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "租车表单",
+          "pathName": "pages/rentalinput/rentalinput",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "预约洗车",
+          "pathName": "pages/yuyuexiche/yuyuexiche",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "暂未开启，敬请期待",
+          "pathName": "pages/no/no",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

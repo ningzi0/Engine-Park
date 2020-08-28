@@ -1,0 +1,63 @@
+<view class="recomBanner">
+    <swiper previous-margin='20px' next-margin='20px' bindchange="swiperChange" current="{{swiper.current}}">
+      <swiper-item wx:for='{{swiper.imgList}}' wx:key=''>
+        <image class='le-img {{swiper.nowIdx==index?"le-active":""}}' bindload='getHeight' src='{{item.bigImage}}' mode="aspectFill"></image>
+        <image src="{{item.smallImage}}" mode="aspectFill" bindload='getHeight' class='carshow2 {{swiper.nowIdx==index?"le-active":""}}'></image>
+      </swiper-item>
+    </swiper>
+    <view class='ceshi_prew' bindtap='nextImg'>
+      <image src="/assets/images/ico/next-ico.png" mode="aspectFill"></image>
+    </view>
+    <view class='ceshi_next' bindtap='prevImg'>
+      <image src="/assets/images/ico/prev-ico.png" mode="aspectFill"></image>
+    </view>
+</view>
+
+<view class="cartitle">
+    <view class="h1">UX 250h</view>
+    <view class="span">Urban Crossover</view>
+    <view class="preiceBtn">￥380000</view>
+</view>
+
+
+
+
+<view class="more">
+    <navigator class="clearfix" url="/pages/carshow/carshow">
+        <text class="f-l">了解更多</text>
+        <image class="f-r" src="/assets/images/ico/more-ico.png" mode="aspectFill"></image>
+    </navigator>
+</view>
+
+
+<view class="Basics pd7">
+    <view class="basicsTitle">基础参数</view>
+    <view class="ul">
+        <view class="li">
+            <image src="/assets/images/ico/Basics-ico1.png" mode="aspectFill"></image>
+            <text>最大功率(KW)127(173Ps),最大扭矩(N·m)207,发动机2.0L 173马力L4.</text>
+        </view>
+        <view class="li">
+            <image src="/assets/images/ico/Basics-ico2.png" mode="aspectFill"></image>
+            <text>CVT无级变速，长宽高：4494x1840x1540，车身结构5门5座SUV</text>
+        </view>
+        <view class="li">
+            <image src="/assets/images/ico/Basics-ico3.png" mode="aspectFill"></image>
+            <text>最高车速(Km/h)190, 官方百公里加速时间(s)9.2，百公里油耗(L)5.8</text>
+        </view>
+        <view class="li">
+            <image src="/assets/images/ico/Basics-ico4.png" mode="aspectFill"></image>
+            <text>发动机型号M20A-FKS，排量(ml)1987，排量(L)2.0, 自然吸气</text>
+        </view>
+    </view>
+</view>
+
+
+
+<view class="selectmodel">
+    <navigator class="clearfix" url="/pages/carshow/carshow">
+        <text class="f-l">SELECT MODEL</text>
+        <text class="f-r">——</text>
+    </navigator>
+</view>
+

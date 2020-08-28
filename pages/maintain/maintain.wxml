@@ -1,0 +1,70 @@
+  <view class="decorate">
+      <view class="decorateitem decorate1"></view>
+      <view class="decorateitem decorate2"></view>
+      <view class="decorateitem decorate3"></view>
+  </view>
+
+
+  <view bindtap='returnPre' >
+      <image src='/assets/images/ico/return.png' mode='aspectFill' class='back-pre'></image>
+  </view>
+  
+  <view class="maintain">
+      <view class="describe">
+          <view class="h3">保养情况描述</view>
+          <view class="p">车辆保养，对车辆进行清洁、检查、紧固、润滑和调整等技术工作的统称。通常分为日常保养、定程保养、停驶保养、换季保养、初驶保养和封存保养。</view>
+      </view>
+
+      <view class="maintain-project">
+          <view class="maintain-project-card">
+              <view class="maintain-cardItem">
+                  <view class="span">项目一</view>
+                  <view class="h4">机油机滤</view>
+                  <image src="/assets/images/ico/jiyou.png" mode="aspectFill"></image>
+              </view>
+              <view class="maintain-cardItem">
+                <view class="span">项目二</view>
+                  <view class="h4">轮胎检查</view>
+                  <image src="/assets/images/ico/luntai.png" mode="aspectFill"></image>
+              </view>
+              <view class="maintain-cardItem">
+                <view class="span">项目三</view>
+                  <view class="h4">深度洗车</view>
+                  <image src="/assets/images/ico/xiche.png" mode="aspectFill"></image>
+              </view>
+          </view>
+          <view class="maintain-project-car">
+              <image src="/assets/images/other/maintain.png" mode="aspectFill"></image>
+          </view>
+          <view class="maintain-price">
+              <view class="price maintain-price-item">
+                  <view class="h3">$1349</view>
+                  <view class="p">保养费用</view>
+              </view>
+              <view class="hour maintain-price-item">
+                  <view class="h3">2H</view>
+                  <view class="p">保养时长</view>
+              </view>
+              <view class="go maintain-price-item">
+                  <view class="h3">保养</view>
+                  <view class="p">GO</view>
+              </view>
+          </view>
+      </view>
+
+    <view class="car-mode">
+        <view class="h3">
+            <text class="text">2019</text>
+            <text class="text-b">雷凌</text>
+        </view>
+        <view class="p">2019款 185T 进取版</view>
+    </view>
+
+
+  </view>
+
+  <view class="decorate decorate-bottom">
+    <view class="decorateitem decorate1"></view>
+    <view class="decorateitem decorate2"></view>
+    <view class="decorateitem decorate3"></view>
+ </view>

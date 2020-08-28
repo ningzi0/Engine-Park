@@ -1,0 +1,87 @@
+<view bindtap='returnPre' >
+    <image src='/assets/images/ico/return.png' mode='aspectFill' class='back-pre'></image>
+</view>
+
+<view class="lookcar">
+  <view class="lookcarContent">
+      <view class="lookcarTitle">预约洗车</view>
+
+      <view class="lookcarUl">
+          <view class="li">
+              <text>车辆类型</text>
+              <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+                <view class="picker">
+                  {{array[index]}}
+                </view>
+              </picker>
+          </view>
+          <view class="li">
+              <text>洗车方式</text>
+              <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+                <view class="picker">
+                  {{array2[index2]}}
+                </view>
+              </picker>
+          </view>
+          <view class="li">
+              <text>洗车时间</text>
+              <picker mode="multiSelector" value="{{dateTime1}}" bindchange="changeDateTime1" bindcolumnchange="changeDateTimeColumn1" range="{{dateTimeArray1}}">
+              <view class="tui-picker-detail">
+              {{dateTimeArray1[0][dateTime1[0]]}}-{{dateTimeArray1[1][dateTime1[1]]}}-{{dateTimeArray1[2][dateTime1[2]]}} {{dateTimeArray1[3][dateTime1[3]]}}:{{dateTimeArray1[4][dateTime1[4]]}}
+              </view>
+            </picker>
+          </view>
+      </view>
+      
+
+
+      <view class="submit">
+          <view class="submit-text">立即预约</view>
+      </view>
+
+
+
+  </view>
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

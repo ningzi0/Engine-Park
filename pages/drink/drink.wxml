@@ -1,0 +1,76 @@
+<view class="drinkWrap">
+    <view class="drinkTitle">饮品<text>/Drink</text></view>
+    <view class="search-drink">
+        <input type="text" placeholder="您想喝点什么饮料呢？" placeholder-style="color:#e0e0e0"></input>
+    </view>
+
+    <view class="drinkTabTitle">
+        <view class="drinkTabTitCon">
+            <block wx:for="{{drinktitledatas}}" wx:key="{{index}}" wx:for-index="i">
+                <view class="item {{currentItem==item.id?'active':''}}" data-id="{{item.id}}" bindtap="tagChoose">{{item.drinkText}}</view>
+            </block>
+        </view>
+    </view>
+
+
+    <view class="drinkContent">
+        <view class="drinkCon">
+            <block wx:for="{{drinkCon}}">
+                <view class="drinkCon-item">
+                    <view class="drinklabel {{item.labelClass}}">{{item.drinklabel}}</view>
+                    <navigator url="{{item.drinkUrl}}">
+                        <view class="drinkPic">
+                            <image src="{{item.drinkPic}}" mode="aspectFill"></image>
+                        </view>
+                        <text>{{item.drinkText}}</text>
+                    </navigator>
+                </view>
+            </block>
+            
+        </view>
+    </view>
+
+
+    
+    <view class="drinkrecom">
+        <view class="drinkrecomTitle">饮品推荐</view>
+        <view class="drinkrecomCon">
+            <block wx:for="{{drinkrecomCon}}">
+                <view class="drinkrecomItem">
+                    <navigator url="{{item.drinkrecomUrl}}">
+                        <view class="drinkrecomPic">
+                            <image src="{{item.drinkrecomPic}}" mode="aspectFill"></image>
+                        </view>
+                        <view class="drinkrecomText">
+                            <view class="h3">{{item.drinkrecomTexth3}}</view>
+                            <text>{{item.drinkrecomTexttext}}</text>
+                        </view>
+                        <view class="drinkrecomNum">{{item.drinkrecomNum}}</view>
+                    </navigator>
+                </view>
+            </block>
+        </view>
+    </view>
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

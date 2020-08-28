@@ -1,0 +1,33 @@
+<!--pages/rental/rental.wxml-->
+<view class="retal-wrap">
+    <view class="retal-ul">
+        <block wx:for="{{rentalarray}}">
+            <view class="retal-li">
+                <view class="retal-title">
+                    <view class="retal-name retal-t-item">
+                        <view class="h3">{{item.retalName}}</view>
+                        <view class="p">{{item.retalNamep}}</view>
+                    </view>
+                    <view class="retal-price retal-t-item">
+                        <view class="retalPriceText">
+                            <text>${{item.retalPriceText}}/天</text>
+                        </view>
+                    </view>
+                </view>
+                <view class="rentalImg">
+                    <image src="{{item.rentalImg}}" mode="aspectFill"></image>
+                    <view class="retal-bottom">
+                        <view class="retal-b-item quchedian">
+                        <image src="/assets/images/ico/address.png" mode="aspectFill"></image>
+                        <text>取车点：引擎公园0.5km</text>
+                        </view>
+                        <view class="retal-b-item retal-btn">
+                            <navigator url="{{item.rentalUrl}}">立即租车</navigator>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </block>
+        
+    </view>
+</view>

@@ -1,0 +1,30 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/bar/bar",
+    "pages/my/my",
+    "pages/recommend/recommend",
+    "pages/carshow/carshow",
+    "pages/drink/drink",
+    "pages/drinkshow/drinkshow",
+    "pages/shopcart/shopcart",
+    "pages/camera/camera",
+    "pages/maintain/maintain",
+    "pages/lookcar/lookcar",
+    "pages/rental/rental",
+    "pages/rentalinput/rentalinput",
+    "pages/yuyuexiche/yuyuexiche",
+    "pages/no/no",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "引擎公园",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

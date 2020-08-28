@@ -1,0 +1,63 @@
+<!--pages/bar/bar.wxml-->
+<view bindtap='returnPre' >
+    <image src='/assets/images/ico/return.png' mode='aspectFill' class='back-pre'></image>
+</view>
+
+<view class="barTop">
+    <view class="barTitle">引擎酒吧</view>
+    <view class="barTopCon">
+        <block wx:for="{{datas}}" wx:key="{{index}}" wx:for-index="i">
+            <view class="barTopItem {{currentItem==item.id?'active':''}}" data-id="{{item.id}}" bindtap="tagChoose">
+                <image src="{{item.barico}}" mode="aspectFill"></image>
+                <text>{{item.barText}}</text>
+            </view>
+        </block>
+    </view>
+</view>
+
+<view class="barSearch">
+    <input class="barSear" type="text" confirm-type="search" placeholder="您想喝点什么呢？" placeholder-style="color:#dedede"></input>
+    <view class="searico">
+        <image src="/assets/images/ico/search.png" mode="aspectFill"></image>
+    </view>
+</view>
+
+<view class="barContent">
+    <view class="barConTitle">
+        <view class="h3">Popular Whiskey</view>
+        <text>这些是世界上比较受欢迎的酒！</text>
+    </view>
+
+    <view class="barConUl">
+        <block wx:for="{{barConArray}}">
+            <view  class="barConLi {{item.active==1?'cur':''}}">
+                <view class="buybtn" data-num="{{item.id}}" bindtap="menuClick">+</view>
+                <navigator url="{{item.barurl}}">
+                    <image src="{{item.barimg}}" mode="aspectFill"></image>
+                    <view class="barConText">
+                        <view class="num">#{{item.barNum}}</view>
+                        <view class="barConTit">{{item.barTitle}}</view>
+                        <view class="p">{{item.barP}}</view>
+                        <view class="addcart">已加入购物车</view>
+                        <view class="price">$ {{item.barPrice}}</view>
+                    </view>
+                </navigator>
+            </view>
+        </block>
+    </view>
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+

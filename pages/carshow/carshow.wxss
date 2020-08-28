@@ -1,0 +1,150 @@
+/* pages/carshow/carshow.wxss */
+
+
+
+.carshowbanner{
+  position: relative;
+}
+.carshowbanner .img image{
+  width: 100%;
+  height: 20em;
+}
+
+.carshowbanner .img .img2{
+  width: 90%;
+  height: 10em;
+  position: absolute;
+  bottom: -5em;
+  z-index: 5;
+  left: 50%;
+  transform: translate(-50%,0);
+}
+
+.introduce{
+  margin-top: 7.2em;
+}
+.introduce .h1{
+  font-size:1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+.introduce .introduceText{
+  font-size: 0.8em;
+  color: #6a706e;
+  text-align: center;
+  width: 90%;
+  margin: 1.75em auto;
+  line-height: 1.75;
+}
+.introduce .priceBtn{
+  width:40%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #efac37;
+  color: #fff;
+  border-radius: 10em;
+  padding: 0.5em 0;
+}
+
+
+.carshowCard{
+  display: flex;
+  margin: 2em 0;
+}
+.carshowCard .item{
+  flex: 1;
+  text-align: center;
+  margin:1%;
+}
+.carshowCard .item .img{
+  border: 1px solid #eee;
+}
+.carshowCard .item .img image{
+  width: 5em;
+  height: 5em;
+}
+.carshowCard .item text{
+  display: block;
+  margin: 0.75em 0;
+}
+.carparameter{
+  padding: 0.75em;
+}
+.title{
+  padding: 0.75em;
+}
+
+.carparameterCon .ul .li{
+  font-size: 0.85em;
+  color: #646464;
+  display: inline-block;
+  width: 49%;
+  padding: 0.85em 0;
+  border-top: 1px solid #eee;
+}
+.carshowpic{
+  width: 100%;
+  overflow-x: scroll;
+  margin: 1.5em 0;
+}
+.carshowpic .carshowpicScroll{
+  width: 293%;
+}
+.carshowpic .pic{
+  display: inline-block;
+  margin-right: 0.75em;
+}
+.carshowpic .pic image{
+  height: 13em;
+  display: block;
+}
+.carshowpic .pic:last-child{
+  margin-right: 0;
+}
+
+.carreport .p{
+  font-size: 0.85em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 2;
+  padding: 0 1em;
+  color: #6e7275;
+  margin: 0.5em 0;
+}
+.carreport .p text.b{
+  color: #000;
+  font-weight: bold;
+}
+
+.carshowimg .title{
+  padding: 1em 1.75em;
+}
+.carshowimgCon{
+  padding: 0.25em 0.5em;
+}
+.carshowimgCon image{
+  width: 100%;
+  height: 20em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

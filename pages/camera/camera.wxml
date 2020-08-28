@@ -1,0 +1,76 @@
+
+<view class="camera">
+    <view class="cameraTitle">
+        <view class="cameraH3">拍摄影棚</view>
+        <view class="cameraText">拍摄日期：2020-08-18</view>
+    </view>
+
+    <view class="cameracontent">
+        <swiper indicator-dots='true'>
+            <swiper-item>
+                <view class="cameraItem">
+                    <view class="cameraPic">
+                        <image src="/assets/images/other/car3.jpg" mode="aspectFill"></image>
+                    </view>
+                </view>
+            </swiper-item>
+            <swiper-item>
+                <view class="cameraItem">
+                    <view class="cameraPic">
+                        <image src="/assets/images/other/car3.jpg" mode="aspectFill"></image>
+                    </view>
+                </view>
+            </swiper-item>
+        </swiper>
+    </view>
+
+    <view class="yuyue">
+        <view class="yuyueitem">
+            <view class="h3" bindtap="toggleDialog">预约拍摄</view>
+            <view class="p">2506人预约影棚</view>
+        </view>
+        <view class="yuyueitem">
+            <image src="/assets/images/other/carshow3.jpg" mode="aspectFill"></image>
+            <image src="/assets/images/other/carshow4.jpg" mode="aspectFill"></image>
+            <image src="/assets/images/other/carshow5.jpg" mode="aspectFill"></image>
+        </view>
+    </view>
+
+
+
+
+    <view class="zan-dialog {{ showDialog ? 'zan-dialog--show' : '' }}">
+        <!-- 如果想点击弹窗外不隐藏，取消bindtap点击事件即可 -->
+        <view class="zan-dialog__mask" bindtap="toggleDialog" />
+        <view class="zan-dialog__container">
+            <view style='padding:100rpx 100rpx 30rpx;'>
+                <view class="diatit">预约拍摄</view>
+                <view class="zan-dialog-ul">
+                    <view class="li">
+                        <text>姓名</text>
+                        <input type="text" placeholder="请输入姓名" placeholder-style="color:#000"></input>
+                    </view>
+                    <view class="li">
+                        <text>手机</text>
+                        <input type="number" placeholder="请输入手机号" placeholder-style="color:#000"></input>
+                    </view>
+                    <view class="li">
+                        <text>日期</text>
+                        <picker mode="date" value="{{date}}" start="2015-09-01" end="9999-09-01" bindchange="bindDateChange">
+                            <view class="picker">{{date}}</view>
+                        </picker>
+                    </view>
+                </view>
+            </view>
+            <view class="cancel-determine">
+                <view class="cancel" bindtap="toggleDialog">取消</view>
+                <view class="determine" bindtap="toggleDialog">确定</view>
+            </view>
+        </view>
+    </view>
+
+
+
+
+
+</view>

@@ -1,0 +1,160 @@
+.decorate{
+  position: fixed;
+  transform: rotate(45deg);
+  left: 8em;
+  top: -13em;
+}
+.decorateitem{
+  width: 15em;
+  height: 15em;
+  background-color: #f7f7f7;
+  position: absolute;
+  border-radius: 0.5em;
+}
+.decorate1{
+  z-index: 3;
+}
+.decorate2{
+  left: -2em;
+  top: 2em;
+  background-color: #f3f0eb;
+  z-index: 2;
+}
+.decorate3{
+  left: -4em;
+  top: 4em;
+  background-color: #eae6d9;
+  z-index: 1;
+}
+
+.maintain{
+  position: relative;
+  z-index: 5;
+  top: 7em;
+  padding: 0 1em;
+}
+.describe{
+  font-size: 0.8em;
+}
+.describe .h3{
+  color: #989898;
+  margin-bottom: 1em;
+}
+
+.describe .p{
+  line-height: 2;
+  text-align: justify;
+}
+
+.maintain-project{
+  position: relative;
+}
+.maintain-cardItem{
+  width: 16vh;
+  height: 16vh;
+  background-color: #f0eeeb;
+  margin: 0.75em 0;
+  padding: 0.75em;
+  box-sizing: border-box;
+}
+
+.maintain-cardItem .span{
+  font-size:0.7em ;
+  color: #7d888b;
+}
+.maintain-cardItem .h4{
+  font-size: 0.85em;
+  font-weight: bold;
+  padding: 0.5em 0;
+}
+.maintain-cardItem image{
+  width: 2.5em;
+  height: 2.5em;
+}
+
+
+.maintain-project-car {
+  position: absolute;
+  right: -45%;
+  top: 40%;
+  transform: translate(0,-50%);
+}
+.maintain-project-car image{
+  width: 25em;
+  height: 16em;
+}
+.maintain-price{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  display: flex;
+}
+.maintain-price-item{
+  flex: 1;
+  text-align: center;
+}
+.maintain-price-item .h3{
+  font-size:1.2em ;
+  font-weight: bold;
+}
+.maintain-price-item .p{
+  font-size: 0.8em;
+}
+.decorate-bottom{
+  top: 85%;
+  left: 65%;
+}
+
+.car-mode .p{
+  font-size: 0.7em;
+  color: #a09f9f;
+}
+.car-mode .h3{
+  font-size: 1.3em;
+  padding: 0.35em 0;
+  color: #445c6b;
+}
+.car-mode .h3 .text-b{
+  font-weight: bold;
+  margin-left: 0.5em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,158 @@
+swiper swiper-item,swiper{
+  height: 295px;
+  overflow: initial;
+}
+swiper swiper-item{
+  overflow: initial;
+}
+ .le-img {
+  width: 100%;
+  display: block;
+  transform: scale(0.92);
+  transition: all 0.3s ease;
+  height: 240px;
+ }
+ .le-img.le-active{
+  transform: scale(1);
+ }
+ 
+ .carshow2{
+  margin: -8em 0 0;
+  position: absolute;
+  z-index: 7;
+  width: 20em;
+  height: 13em;
+  left: 50%;
+  transform: translate(-60%,0) scale(0.7);
+  transition: all 1s ease;
+ }
+ .carshow2.le-active{
+  transform: translate(-50%,0) scale(1);
+ }
+ 
+.cartitle{
+  text-align: center;
+}
+.cartitle .h1{
+  font-size: 1.55em;
+  font-weight: bold;
+}
+.cartitle .span{
+  font-size: 0.75em;
+  color: #5d6266;
+  margin: 0.75em 0;
+}
+.cartitle .preiceBtn{
+  width:40%;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #efac37;
+  color: #fff;
+  border-radius: 10em;
+  padding: 0.5em 0;
+}
+
+
+
+
+.ceshi_prew image {
+  width: 100%;
+  height: 100%;
+}
+
+.ceshi_next image {
+  width: 100%;
+  height: 100%;
+}
+
+.ceshi_next {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 20em;
+  left: 1.2em;
+}
+
+.ceshi_prew {
+  width: 2em;
+  height: 2em;
+  position: absolute;
+  top: 20em;
+  right: 1.2em;
+}
+.more{
+  margin:1.75em 1em;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.more navigator{
+  padding: 1em 0;
+}
+.more text{
+  font-size:0.9em ;
+}
+.more image{
+  width: 1.5em;
+  height: 1.5em;
+}
+
+.Basics .ul{
+  margin: 1.5em 0 0;
+}
+.Basics .ul .li{
+  margin: 0.75em 0.5em;
+}
+
+.Basics .ul .li image{
+  width: 2em;
+  height: 2em;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0.5em;
+}
+
+.Basics .ul .li text{
+  display: inline-block;
+  font-size: 0.85em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 85%;
+  vertical-align: middle;
+  color: #5d6162;
+}
+
+.basicsTitle{
+  margin: 1em;
+  font-size: 0.9em;
+}
+
+
+.selectmodel{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  background-color: #fff;
+  box-sizing: border-box;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ebebeb;
+}
+.selectmodel navigator{
+  background-color: rgb(34, 34, 34);
+  color: #fff;
+  margin: 1em;
+  padding: 1em;
+  font-size: 0.8em;
+  letter-spacing: 0.1em;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+.selectmodel navigator text:last-child{
+  font-weight: 500;
+}
+
+
+
+
+

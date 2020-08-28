@@ -1,0 +1,166 @@
+/* pages/drink/drink.wxss */
+.drinkWrap{
+  box-sizing: border-box;
+}
+.drinkTitle{
+  font-size:2.2em ;
+  font-weight: bold;
+  margin: 0.25em 0;
+  padding: 0 0.5em;
+}
+.drinkTitle text{
+  font-size: 0.5em;
+  font-weight: 100;
+}
+.search-drink{
+  padding: 0.75em 1em;
+}
+.search-drink input{
+  font-size:0.9em ;
+  background-color: #fcfcfc;
+  padding: 1em 1.5em;
+}
+.drinkTabTitle{
+  width: 100%;
+  overflow-x: scroll;
+}
+.drinkTabTitCon{
+  display: flex;
+  width: 170%;
+}
+.drinkTabTitle .item{
+  flex: 1;
+  font-size: 0.9em;
+  color: #e0e0e0;
+  padding: 1em 0 1.5em;
+  text-align: center;
+  position: relative;
+  transition: 0.4s;
+}
+.drinkTabTitle .item.active{
+  color: #000;
+  font-weight: bold;
+  transform: scale(1.25);
+}
+.drinkTabTitle .item.active::after{
+  display: block;
+}
+.drinkTabTitle .item:after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  bottom: 7px;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 55;
+  border-radius: 50%;
+  display: none;
+}
+
+
+.drinkPic image{
+  width: 5em;
+  height: 7em;
+}
+.drinkContent{
+  width: 100%;
+  overflow-x: scroll;
+  padding-left: 0.5em;
+  margin: 1em 0;
+  padding-top: 0.75em;
+}
+.drinkCon{
+  display: flex;
+  width: 180%;
+  padding-right: 1em;
+}
+.drinkCon-item{
+  background-color: #efac37;
+  flex: 1;
+  margin: 0 0.35em;
+  text-align: center;
+  border-radius: 1.2em;
+  position: relative;
+}
+
+.drinkCon-item navigator{
+  padding: 1em 0;
+}
+.drinkCon-item text{
+  font-size: 0.8em;
+  color: #fff;
+}
+.drinklabel{
+  position: absolute;
+  font-size: 0.75em;
+  color: #fff;
+  top: -0.15em;
+  left: 1em;
+  padding: 0.35em 0.25em;
+}
+.drinklabel.new{
+  background-color: #2cbbe7;
+}
+.drinklabel.hot{
+  background-color: #e7382c;
+}
+.drinklabel.cu{
+  background-color: #1eca49;
+}
+
+
+
+.drinkrecom{
+  padding: 1em;
+}
+
+.drinkrecomTitle{
+  font-size:1.2em ;
+  font-weight: bold;
+}
+.drinkrecomCon{
+  margin: 1em 0;
+}
+.drinkrecomPic{
+  display: inline-block;
+  vertical-align: middle;
+}
+.drinkrecomPic image{
+  width: 5em;
+  height: 5em;
+  border-radius: 1em;
+}
+.drinkrecomItem{
+  margin: 0.75em 0;
+}
+.drinkrecomText{
+  display: inline-block;
+  width: 65%;
+  vertical-align: middle;
+  padding: 0 1em;
+  box-sizing: border-box;
+}
+.drinkrecomText .h3{
+  font-size: 1.2em;
+  font-weight: bold;
+}
+.drinkrecomText text{
+  font-size: 0.75em;
+  color: #bbb;
+}
+.drinkrecomNum{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 1.7em;
+  font-weight: bold;
+  text-align: right;
+  width: 10%;
+}
+
+
+
+
+

@@ -1,0 +1,140 @@
+.shopcartTitle{
+  margin:5em 0 0
+}
+.shopcart{
+  padding: 0 1em;
+}
+.shopcartH3{
+  font-size: 2em;
+  font-weight: bold;
+}
+.shopcartText{
+  font-size: 0.85em;
+  color: #afafaf;
+  padding: 0.5em 0;
+}
+
+.shopcartContent{
+  margin: 3em 0;
+  overflow: hidden;
+  padding-bottom: 2em;
+}
+.shopcartpic{
+  background-color: #efac37;
+  display: inline-block;
+  width: 5em;
+  height: 5em;
+  text-align: center;
+  padding: 0.75em 0.75em;
+  border-radius: 0.75em;
+  box-shadow: 0 0.2em 1em rgba(0,0,0,0.15);
+  vertical-align: middle;
+}
+.shopcartpic image{
+  width: 4em;
+  height: 5.5em;
+}
+.shopcartConText{
+  display: inline-block;
+  width: 50%;
+  vertical-align: middle;
+  padding: 0 0.75em;
+}
+.shopcartConText .h3{
+  font-size: 1.3em;
+  font-weight: bold;
+}
+.shopcartConText .text{
+  font-size: 0.7em;
+  color: #afafaf;
+  margin: 0.5em 0;
+}
+.shopcartConText .price{
+  font-size: 1.1em;
+  color: #efac37;
+  margin-top:0.75em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.shopcartnum{
+  display: inline-block;
+  width: 10%;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.addnum,.reducenum{
+  color: rgb(122, 122, 122);
+  font-size: 1.1em;
+  margin: 0.35em 0;
+  padding: 0.3em;
+}
+.shopcartnum .number{
+  font-weight: bold;
+  font-size: 0.95em;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.shopcartItem{
+  position: relative;
+  margin: 1em 0;
+  transition: 0.4s;
+  
+}
+
+.remove{  
+  width: 160rpx;  
+  height: 100%;  
+  background-color: red; 
+  color: white; 
+  position: absolute;  
+  top: 0;  
+  right: -160rpx;  
+  display: flex;  
+  justify-content: center;  
+  align-items: center;  
+}  
+
+.total{
+  display: flex;
+  position: fixed;
+  bottom: 1em;
+  width: 90%;
+  background-color: #efac37;
+  color: #fff;
+  box-sizing: border-box;
+  left: 50%;
+  transform: translate(-50%,0);
+  border-radius: 10em;
+  padding: 0.85em 1em;
+  box-shadow: 0 0 1em rgba(0,0,0,0.1);
+}
+.totalItem{
+  flex: 1;
+}
+.totalText,.totalprice{
+  display: inline-block;
+  vertical-align: middle;
+}
+.totalText{
+  font-size: 0.85em;  
+  margin: 0 1em;
+}
+.totalprice text.fuhao{
+  font-size: 0.75em;
+  display: inline-block;
+  vertical-align: top;
+}
+.totalprice text.num{
+  font-size: 1.5em;
+  display: inline-block;
+  vertical-align: top;
+  font-weight: bold;
+}
+
+.buyorder{
+  text-align: center;
+  font-size: 1.3em;
+  text-align: right;
+  padding-right: 1em;
+}
+
