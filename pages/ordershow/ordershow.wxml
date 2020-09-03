@@ -1,0 +1,64 @@
+<view class="orderShow">
+      <view class="ordershowTitle">订单配送中</view>
+      <!-- 订单信息 -->
+      <view class="orderCon">
+          <view class="orderimg">
+              <image src="http://www.ncjmcc.com/uploads/allimg/161112/6-1611121036191K.jpg" mode="aspectFill"></image>
+          </view>
+          <view class="orderText">
+              <view class="orderT-Name">冰布丁奶茶</view>
+              <view class="orderT-Num">数量：1</view>
+              <view class="orderT-Date">时间：2020-09-02 11：24</view>
+              <view class="orderT-price">价格：￥36.6</view>
+          </view>
+          <view class="orderT-btn">
+              <view class="orderT-b1">申请退款</view>
+              <view class="orderT-b2">致电商家</view>
+          </view>
+      </view>
+      <!-- 配送信息 -->
+      <view class="orderCon">
+          <view class="orderShowTit">配送信息</view>
+          <view class="orderShowUl">
+              <view class="orderShowLi">
+                  <text class="span">期望时间</text>
+                  <text class="font">立即配送</text>
+              </view>
+              <view class="orderShowLi">
+                  <text class="span">配送地址</text>
+                  <text class="font">中天·世纪新城三组团停车场（D1-1-6-2）</text>
+              </view>
+              <view class="orderShowLi">
+                  <text class="span">收货信息</text>
+                  <text class="font">张丰文（先生） 151******0538</text>
+              </view>
+              <view class="orderShowLi">
+                  <text class="span">配送状态</text>
+                  <text class="font">配送中</text>
+              </view>
+          </view>
+      </view>
+
+      <!-- 订单信息 -->
+      <view class="orderCon">
+          <view class="orderShowTit">订单信息</view>
+          <view class="orderShowUl">
+              <view class="orderShowLi">
+                  <text class="span">订单编号</text>
+                  <text class="font">YP202009021124</text>
+              </view>
+              <view class="orderShowLi">
+                  <text class="span">下单时间</text>
+                  <text class="font">2020-09-02 11：24</text>
+              </view>
+              <view class="orderShowLi">
+                  <text class="span">支付方式</text>
+                  <text class="font">在线支付</text>
+              </view>
+              <view class="orderShowLi">
+                  <text class="span">订单备注</text>
+                  <text class="font">无</text>
+              </view>
+          </view>
+      </view>
+</view>

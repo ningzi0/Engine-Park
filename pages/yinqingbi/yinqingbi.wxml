@@ -1,0 +1,47 @@
+<view class="yinqingbi">
+    <view class="yinqingbiTop">
+        <view class="yinqingbiTtitle">
+            <text>引擎币（用于公园内消费）</text>
+            <view class="yinqingbiNum">0.00</view>
+        </view>
+    </view>
+    <view class="yinqingbiContent">
+        <view class="tips">Tips:公园内消费赠送（买车、洗车、保养美容等），消费按各区域有消费上限</view>
+        <view class="yinqingbiCon">
+            <view class="yinqingbiItem">
+                <view class="yinqingbiMonth">本月<text>▼</text></view>
+                <block wx:for="{{yinqingbiArray}}">
+                    <view class="yinqingbiItemCon">
+                        <view class="yinqingbiLeft">
+                            <view class="yinqingbiLeftH3">{{item.yinqingbiLeftH3}}</view>
+                            <view class="yinqingbiLeftP">昨天 15:54</view>
+                        </view>
+                        <view class="yinqingbiRight">-380.00</view>
+                    </view>
+                </block>
+            </view>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

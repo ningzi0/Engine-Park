@@ -1,0 +1,62 @@
+<view>
+  <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+    <block wx:for-items="{{newsTab}}">
+      <view data-current="{{index}}" class="tab-item {{currentTab == index ?'active':''}}" bindtap="swichNav" >
+        {{item}}
+      </view>
+    </block>
+  </scroll-view>
+  <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{winHeight}}rpx">
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block wx:for="{{orderArray}}">
+          <view class="item">
+              <view class="ordernum">订单编号：{{item.ordernum}}</view>
+              <view class="orderCon">
+                  <view class="orderimg">
+                      <image src="{{item.orderimg}}" mode="aspectFill"></image>
+                  </view>
+                  <view class="orderText">
+                      <view class="orderT-Name">{{item.orderTName}}</view>
+                      <view class="orderT-Num">数量：{{item.orderTNum}}</view>
+                      <view class="orderT-Date">时间：{{item.orderTDate}}</view>
+                      <view class="orderT-price">价格：￥{{item.orderTprice}}</view>
+                  </view>
+                  <view class="orderT-btn">
+                      <view class="orderT-b1">申请退款</view>
+                      <view class="orderT-b2">确认订单</view>
+                  </view>
+              </view>
+          </view>
+        </block>
+      </scroll-view>
+    </swiper-item>
+
+    <swiper-item>
+      <scroll-view scroll-y="true" class="scoll-h">
+        <block wx:for="{{retreatArray}}">
+          <view class="item">
+                <view class="ordernum">订单编号：{{item.ordernum}}</view>
+                <view class="orderCon">
+                    <view class="orderimg">
+                        <image src="{{item.orderimg}}" mode="aspectFill"></image>
+                    </view>
+                    <view class="orderText">
+                        <view class="orderT-Name">{{item.orderTName}}</view>
+                        <view class="orderT-Num">数量：{{item.orderTNum}}</view>
+                        <view class="orderT-Date">时间：{{item.orderTDate}}</view>
+                        <view class="orderT-price">退款：￥{{item.orderTprice}}</view>
+                    </view>
+                    <view class="retreat">
+                        <text>退款成功 退款成功￥36.6元</text>
+                    </view>
+                    <view class="orderT-btn">
+                        <view class="orderT-b1">退款已完成</view>
+                    </view>
+                </view>
+            </view>
+          </block>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

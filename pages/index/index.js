@@ -24,10 +24,10 @@ Page({
     }],
     tabArray:[{
       tabText:'引擎币',
-      tabUrl:'/pages/no/no'
+      tabUrl:'/pages/yinqingbi/yinqingbi'
     },{
       tabText:'抽奖活动',
-      tabUrl:'/pages/no/no'
+      tabUrl:'/pages/prize/prize'
     },{
       tabText:'租车服务',
       tabUrl:'/pages/rental/rental'

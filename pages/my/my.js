@@ -9,13 +9,13 @@ Page({
       myicoImg:'/assets/images/ico/myico1.png',
       myicoText:'引擎币',
       myicoNum:'0',
-      myurl:'/pages/no/no'
+      myurl:'/pages/yinqingbi/yinqingbi'
     },
     {
       myicoImg:'/assets/images/ico/myico2.png',
       myicoText:'消息',
       myicoNum:'12',
-      myurl:'/pages/no/no'
+      myurl:'/pages/message/message'
     },
     {
       myicoImg:'/assets/images/ico/myico3.png',

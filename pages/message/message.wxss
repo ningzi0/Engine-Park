@@ -1,0 +1,24 @@
+/* pages/message/message.wxss */
+page{
+  background-color: #fafafa;
+}
+
+.messageTime{
+  font-size: 0.75em;
+  text-align: center;
+  padding: 1em 0;
+}
+.messageCon{
+  background-color: #fff;
+  padding: 1em;
+  margin:0 1em 1em;
+  box-sizing: border-box;
+}
+.messageCon .messageH3{
+  padding-bottom: 0.5em;
+}
+.messageCon .messageP{
+  font-size: 0.8em;
+  color: #bbbbbb;
+  text-align: justify;
+}

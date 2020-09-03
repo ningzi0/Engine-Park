@@ -1,0 +1,54 @@
+<view class="prize">
+    <view class="festival">
+        <view class="festival-title">日常节日抽奖-开学季</view>
+        <view class="prize-item">
+            <view class="prizepic">
+                <image src="/assets/images/other/carshow3.jpg" mode="aspectFill"></image>
+            </view>
+            <view class="prizeItemCon">
+                <view class="prizeItemCsmallTitle">免费福利抽奖</view>
+                <view class="prizeItemCp">奖品：引擎公园精品洗车抵扣券，价值：￥128元</view>
+                <view class="prizeItemBtn">立即抽奖</view>
+            </view>
+        </view>
+    </view>
+
+    
+    <view class="LuckyDraw">
+      <view class="festival-title">抽奖活动</view>
+      <view class="luckydraw">
+          <view class="luckydrawItem">
+              <view class="luckydrawItemBody">
+                <view class="pic">
+                    <image src="/assets/images/other/carshow4.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="luckydrawCon">
+                    <view class="luckydrawConH3">奖品：引擎公园精品洗车抵扣券，价值：￥128元</view>
+                    <view class="luckydrawConp">09月02日 11:41 自动开奖</view>
+                    <view class="luckydrawBtn">
+                        <text class="danbao">引擎担保</text>
+                        <text class="choujiang">立即抽奖</text>
+                    </view>
+                </view>
+              </view>
+          </view>
+          <view class="luckydrawItem">
+              <view class="luckydrawItemBody">
+                <view class="pic">
+                    <image src="/assets/images/other/carshow4.jpg" mode="aspectFill"></image>
+                </view>
+                <view class="luckydrawCon">
+                    <view class="luckydrawConH3">奖品：引擎公园精品洗车抵扣券，价值：￥128元</view>
+                    <view class="luckydrawConp">09月02日 11:41 自动开奖</view>
+                    <view class="luckydrawBtn">
+                        <text class="danbao">引擎担保</text>
+                        <text class="choujiang">立即抽奖</text>
+                    </view>
+                </view>
+              </view>
+          </view>
+      </view>
+    </view>
+
+
+</view>

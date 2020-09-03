@@ -1,0 +1,94 @@
+/* pages/prize/prize.wxss */
+page{
+  background-color: #f0f0f0;
+}
+.prize{
+  padding: 1em;
+}
+.festival-title{
+  font-size: 0.95em;
+  color: #000;
+}
+.prizepic image{
+  width: 100%;
+  height: 10em;
+  display: block;
+}
+.prize-item{
+  margin: 0.75em 0;
+}
+.prizeItemCsmallTitle{
+  font-size: 0.85em;
+  color: #c91700;
+  font-weight: bold;
+}
+.prizeItemCon{
+  background-color: #fff;
+  padding: 1em;
+}
+.prizeItemCp{
+  font-size: 0.9em;
+  line-height: 1.75;
+  margin-top: 0.75em;
+}
+.prizeItemBtn{
+  border: 1px solid #c91700;
+  padding: 0.75em;
+  text-align: center;
+  color: #c91700;
+  margin-top:0.5em ;
+}
+.luckydrawItem {
+  padding: 0.75em;
+  background-color: #fff;
+  margin: 0.75em 0;
+}
+.luckydrawItem .pic image{
+  width: 7em;
+  height: 7em;
+  display: block;
+}
+.luckydrawItem .pic{
+  display: inline-block;
+  vertical-align: middle;
+}
+.luckydrawCon{
+  width: 63%;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.5em;
+  box-sizing: border-box;
+}
+.luckydrawCon .luckydrawConH3{
+  font-size: 0.95em;
+  line-height: 1.7;
+}
+.luckydrawCon .luckydrawConp{
+  font-size: 0.85em;
+  color: #767676;
+  margin: 0.5em 0;
+}
+.luckydrawCon .luckydrawBtn text{
+  font-size: 0.95em;
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  margin-right: 0.6em;
+}
+.luckydrawCon .luckydrawBtn text.danbao{
+  color: #37b02f;
+  border: 1px solid #37b02f;
+}
+.luckydrawCon .luckydrawBtn text.choujiang{
+  color: #c91700;
+  border: 1px solid #c91700;
+}
+
+
+
+
+
+
+
+
+
+

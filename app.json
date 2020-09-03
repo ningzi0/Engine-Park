@@ -9,12 +9,18 @@
     "pages/drinkshow/drinkshow",
     "pages/shopcart/shopcart",
     "pages/camera/camera",
+    "pages/camerashow/camerashow",
     "pages/maintain/maintain",
     "pages/lookcar/lookcar",
     "pages/rental/rental",
     "pages/rentalinput/rentalinput",
     "pages/yuyuexiche/yuyuexiche",
     "pages/no/no",
+    "pages/message/message",
+    "pages/prize/prize",
+    "pages/yinqingbi/yinqingbi",
+    "pages/order/order",
+    "pages/ordershow/ordershow",
     "pages/logs/logs"
   ],
   "window": {

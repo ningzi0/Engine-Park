@@ -1,0 +1,48 @@
+<view class="camerashow">
+    <swiper bindchange="swiperChange" current="{{cur}}">
+        <block wx:for="{{camerashowArray}}">
+          <swiper-item>
+            <view class="pic">
+                <image src="{{item.pic}}" mode="aspectFill"></image>
+            </view>
+            <view class="text {{item.extraClasses}}">
+                <text>{{item.text}}</text>
+            </view>
+          </swiper-item>
+        </block>
+    </swiper>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

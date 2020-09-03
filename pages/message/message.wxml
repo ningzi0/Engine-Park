@@ -1,0 +1,54 @@
+<view class="message">
+  <block wx:for="{{messageArray}}">
+      <view class="messageitem">
+          <view class="messageTime">{{item.messageTime}}</view>
+          <view class="messageCon">
+              <view class="messageH3">{{item.messageH3}}</view>
+              <view class="messageP">{{item.messageP}}</view>
+          </view>
+      </view>
+    </block>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

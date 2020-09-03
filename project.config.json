@@ -170,6 +170,48 @@
           "id": -1,
           "name": "暂未开启，敬请期待",
           "pathName": "pages/no/no",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "消息",
+          "pathName": "pages/message/message",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "抽奖活动",
+          "pathName": "pages/prize/prize",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "引擎币",
+          "pathName": "pages/yinqingbi/yinqingbi",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "订单",
+          "pathName": "pages/order/order",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "订单详情",
+          "pathName": "pages/ordershow/ordershow",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "拍摄详情",
+          "pathName": "pages/camerashow/camerashow",
           "scene": null
         }
       ]
