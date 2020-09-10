@@ -212,6 +212,27 @@
           "id": -1,
           "name": "拍摄详情",
           "pathName": "pages/camerashow/camerashow",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "租车详情",
+          "pathName": "pages/rentalshow/rentalshow",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "质检报告",
+          "pathName": "pages/report/report",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "车辆参数",
+          "pathName": "pages/table/table",
           "scene": null
         }
       ]

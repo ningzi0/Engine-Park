@@ -1,0 +1,47 @@
+<view class="tableWrap">
+    <view class="tableItem" wx:for="{{tablearray}}">
+        <view class="tableTitle">{{item.tabletitle}}</view>
+        <view class="table">
+            <block wx:for="{{item.carinfo}}">
+                <view class="table-tr">
+                    <view class="table-td">{{item.td1}}</view>
+                    <view class="table-td">{{item.td2}}</view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

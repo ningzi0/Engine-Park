@@ -13,6 +13,7 @@
     "pages/maintain/maintain",
     "pages/lookcar/lookcar",
     "pages/rental/rental",
+    "pages/rentalshow/rentalshow",
     "pages/rentalinput/rentalinput",
     "pages/yuyuexiche/yuyuexiche",
     "pages/no/no",
@@ -21,6 +22,8 @@
     "pages/yinqingbi/yinqingbi",
     "pages/order/order",
     "pages/ordershow/ordershow",
+    "pages/report/report",
+    "pages/table/table",
     "pages/logs/logs"
   ],
   "window": {

@@ -33,7 +33,11 @@
 
 
       <view class="submit">
-          <view class="submit-text">立即租车</view>
+          <view class="submit-text">
+            <navigator url="/pages/rentalshow/rentalshow">
+              立即租车
+            </navigator>
+          </view>
       </view>
 
 

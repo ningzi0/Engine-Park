@@ -13,15 +13,17 @@
           <view class="item">
               <view class="ordernum">订单编号：{{item.ordernum}}</view>
               <view class="orderCon">
-                  <view class="orderimg">
-                      <image src="{{item.orderimg}}" mode="aspectFill"></image>
-                  </view>
-                  <view class="orderText">
-                      <view class="orderT-Name">{{item.orderTName}}</view>
-                      <view class="orderT-Num">数量：{{item.orderTNum}}</view>
-                      <view class="orderT-Date">时间：{{item.orderTDate}}</view>
-                      <view class="orderT-price">价格：￥{{item.orderTprice}}</view>
-                  </view>
+                <navigator url="{{item.orderUrl}}">
+                    <view class="orderimg">
+                        <image src="{{item.orderimg}}" mode="aspectFill"></image>
+                    </view>
+                    <view class="orderText">
+                        <view class="orderT-Name">{{item.orderTName}}</view>
+                        <view class="orderT-Num">数量：{{item.orderTNum}}</view>
+                        <view class="orderT-Date">时间：{{item.orderTDate}}</view>
+                        <view class="orderT-price">价格：￥{{item.orderTprice}}</view>
+                    </view>
+                </navigator>
                   <view class="orderT-btn">
                       <view class="orderT-b1">申请退款</view>
                       <view class="orderT-b2">确认订单</view>
@@ -38,15 +40,17 @@
           <view class="item">
                 <view class="ordernum">订单编号：{{item.ordernum}}</view>
                 <view class="orderCon">
-                    <view class="orderimg">
-                        <image src="{{item.orderimg}}" mode="aspectFill"></image>
-                    </view>
-                    <view class="orderText">
-                        <view class="orderT-Name">{{item.orderTName}}</view>
-                        <view class="orderT-Num">数量：{{item.orderTNum}}</view>
-                        <view class="orderT-Date">时间：{{item.orderTDate}}</view>
-                        <view class="orderT-price">退款：￥{{item.orderTprice}}</view>
-                    </view>
+                    <navigator url="{{item.orderUrl}}">
+                      <view class="orderimg">
+                          <image src="{{item.orderimg}}" mode="aspectFill"></image>
+                      </view>
+                      <view class="orderText">
+                          <view class="orderT-Name">{{item.orderTName}}</view>
+                          <view class="orderT-Num">数量：{{item.orderTNum}}</view>
+                          <view class="orderT-Date">时间：{{item.orderTDate}}</view>
+                          <view class="orderT-price">退款：￥{{item.orderTprice}}</view>
+                      </view>
+                    </navigator>
                     <view class="retreat">
                         <text>退款成功 退款成功￥36.6元</text>
                     </view>

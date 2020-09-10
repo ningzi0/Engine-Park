@@ -1,0 +1,412 @@
+<view class="rentalshow">
+    <view class="rentalshowFirst">
+        <!-- 车辆信息 -->
+        <view class="rentalshowCarInfo">
+            <view class="carpic">
+                <image src="/assets/images/other/carshow2.png" mode="aspectFill"></image>
+            </view>
+            <view class="carinfo">
+                <view class="carinfoh3">雷克萨斯ES</view>
+                <view class="carinfop">自动挡 | 5座 | 2.0L</view>
+            </view>
+        </view>
+        <!-- 租还时间 -->
+        <view class="rentalshowTime">
+            <view class="rentalshowLi">
+                <view class="rentalshowTimeInfo">
+                    <view class="rentalshowTimeinfoitem">
+                        <text class="rentalshowBtn">取</text>
+                        <text class="rentalshowTimeText">09-04 周五 10：00</text>
+                        <text class="rentalshowAdd">贵阳引擎公园店</text>
+                    </view>
+                    <view class="rentalshowTimeinfoitem">
+                        <text class="rentalshowBtn">还</text>
+                        <text class="rentalshowTimeText">09-06 周日 10：00</text>
+                        <text class="rentalshowAdd">贵阳引擎公园店</text>
+                    </view>
+                </view>
+                <view class="rentalshowTimetotal">
+                    <text>2天</text>
+                </view>
+            </view>
+        </view>
+        <!-- 取还地点信息 -->
+        <view class="addinfo">
+            <view class="addinfoTitle">
+                <view class="addinfologo">
+                    <image src="/assets/images/logo/logo.png" mode="aspectFill"></image>
+                    <text>引擎公园租车</text>
+                </view>
+                <view class="addinfoUl">
+                    <view class="addinfoLi">
+                        <text class="addinfoliSpan">取车门店</text>
+                        <text>贵州省贵阳市引擎公园店</text>
+                    </view>
+                    <view class="addinfoLi">
+                        <text class="addinfoliSpan">还车门店</text>
+                        <text>贵州省贵阳市引擎公园店</text>
+                    </view>
+                    <view class="addinfoLi">
+                        <text class="addinfoliSpan">营业时间</text>
+                        <text>12小时营业(取)12小时营业(还)</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        
+
+    </view>
+    <!-- 租车须知 退改规则 补充说明 -->
+    <view class="Notice">
+      <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+        <block wx:for-items="{{newsTab}}">
+          <view data-current="{{index}}" class="tab-item {{currentTab == index ?'active':''}}" bindtap="swichNav" >
+            {{item}}
+          </view>
+        </block>
+      </scroll-view>
+      <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:{{swiperHeight}}px">
+        <swiper-item>
+          <scroll-view scroll-y="true" class="scoll-h" id="scroll-h0">
+              <view class="item">
+                  <view class="tabspan">取车凭证</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">身份证+驾驶证：国内二代身份证有效期需1个月以上，驾龄需半年以上。</text>
+                  </view>
+              </view>
+              <view class="item">
+                  <view class="tabspan">押金预授权：人民币</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">芝麻粉≥650分，即免5000元内车辆押金；芝麻分≥750分，即免8000元内车辆押金；未能享受免押服务的冻结对应车型信用卡预授权，还车即解除；还车后需冻结一笔2000元的违章押金，如用车期间无违章，则在还车后30天自动解冻，押金可通过信用卡、支付宝、预授权的方式进行冻结。</text>
+                  </view>
+              </view>
+              <view class="item">
+                  <view class="tabspan">发票</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">身份证+驾驶证：国内二代身份证有效期需1个月以上，驾龄需半年以上。</text>
+                  </view>
+              </view>
+          </scroll-view>
+        </swiper-item>
+        <swiper-item>
+          <scroll-view scroll-y="true" class="scoll-h" id="scroll-h1">
+            <view class="item">
+                  <view class="tabspan">如果您未取车</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">2020年09月05日06时00分前，可免费取消订单</text>
+                  </view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">2020年09月05日06时00分到2020年09月05日10时00分之间取消订单，收取订单费用30%作为违约金</text>
+                  </view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">2020年09月05日10时00分之后取消订单，收取订单费用100%作为违约金</text>
+                  </view>
+            </view>
+            <view class="item">
+                  <view class="tabspan">如果您已取车</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">需要取消订单，请及时与商家联系协商，协商-致后申请退款</text>
+                  </view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">过了取车时间未取车，将收取全单金额作为违约金。提前还车需致电J店或客服人员(028-89992953，客服在线时间:09:00-24:00)，经确认后商议进行退款操作。</text>
+                  </view>
+              </view>
+          </scroll-view>
+        </swiper-item>
+        <swiper-item>
+          <scroll-view scroll-y="true" class="scoll-h" id="scroll-h2">
+            <view class="item">
+                  <view class="tabspan">限行区域</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">未经租车公司同意车辆不允许进入西藏、甘孜州、阿坝州、新疆、云南省泸沽湖、出境，如需进入请提前联系租车公司客服，贵州租赁车辆不允许驶出贵州省。</text>
+                  </view>
+              </view>
+              <view class="item">
+                  <view class="tabspan">新手说明</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">引擎租车不接受新手客户(拿到驾照小于半年)预定。</text>
+                  </view>
+              </view>
+              <view class="item">
+                  <view class="tabspan">限行处理</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">限号期间优先为您提供不限号车辆，若暂时无法提供不限号车辆，可到]店更换同级别车型或免费升级车辆，若供应商库存不足或您不接受，客户车辆在限号当天在限行区域内停驶车辆，我司可减免限号当天的日租金。</text>
+                  </view>
+              </view>
+              <view class="item">
+                  <view class="tabspan">续租租金</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">需提前24小时联系门店，续租申请成功，续租.租金以当日价格为准(基本保险费用正常收取)，在门店营业时间范围内办理续租手续,21:30至次日早.上7:30间办理可能需额外支付夜间服务费。未提前联系门店或未经门店同意强行续租，额外收取续租首日租金(不含基本保险、手续费及附加服务费)的300%作为违约金。</text>
+                  </view>
+              </view>
+              <view class="item">
+                  <view class="tabspan">延迟还车收费标准</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">需要提前24小时联系门店，在门店营业时间范围内办理还车手续，如未提前联系，可能无法及时还车，21:30至次日早.上7:30间办理可能需额外支付夜间服务费。*延迟1小时 (含)内还车，不额外收费。*延迟1小时以 上至4小时(含)内还车，收取当日订单金额50%费用。*延迟4小时以上，收取当日订单金额100%费用。</text>
+                  </view>
+              </view>
+              <view class="item">
+                  <view class="tabspan">节假日提前还车收费标准</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">节假日订单:提前还车不退费。</text>
+                  </view>
+              </view>
+              <view class="item">
+                  <view class="tabspan">违章押金天数及违约金</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">用车期间如有违章,均由客人自行处理。客人需在被通知日起，7日(包括当天)内处理完毕，并第一时间告知服务商，结算前请保留相关凭证。如超时未处理违章，将从押金中扣除相应金额作为违章超时违约金,剩余退还</text>
+                  </view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">如押金不足以抵偿全部损失，服务商有权根据实际损失向客人方追偿。自行处理如需借用行驶证，费用为200元/天.如您无法自行按时处理,将按以”下标准收取违章违约金:( ) 无扣分:违章违约金=违章罚款金额+100元/条违章C有扣分:单条违章扣分低于12分: 违章违约金=违章罚款金额+200元/分+100元/条违章单条违章扣分12分:违章违约金=违章罚款金额+10000元/12分违章+100元/条违章注:违章罚款金额以违章决定书或交通网站查询到的违章罚款金额为准。其他损失按合同及相关法律法规协商处理。</text>
+                  </view>
+                  
+              </view>
+              <view class="item">
+                  <view class="tabspan">尊享服务费服务特别说明</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">1.本车车损5000元以内(包含5000元) 不收任何费用(玻璃及轮胎的单独破损不包含) 。2.若本车车损超过5000元，按照实际定损金额30%收取车辆折旧费。停运费则坡照维佟天数收取停运费(当日价格的租车费+基础服务费，不含增值服务费)。3. 发生事故第一时间联系门店，未联系门店擅自处理会导致拒赔。4. 发生事故不论是否客户责任，都需要客户去对接第三方，我司配合提供相关材料，指导处理举例.(已购买)出现本车 车辆车损5500元，客户购买优享服务，赔付5500*0.3=1 650元折旧费以及车辆实际维修天数停驶费(玻璃轮胎除外)出现本车车辆车损4800元，客户购买优享服务，客户无需支付费用(玻璃轮胎除外)举例(未购买)出现本车 车辆车损3000元，客户未购买优享服务，赔付1 500元加上</text>
+                  </view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">3000*0.3-900元折旧费以及车辆实际维修天数停运费(玻璃轮胎除外)。</text>
+                  </view>
+              </view>
+              <view class="item">
+                  <view class="tabspan">其他</view>
+                  <view class="tabp">
+                    <text class="pointer">●</text>
+                    <text class="tabP">具体细节以租车合同为准。</text>
+                  </view>
+              </view>
+          </scroll-view>
+        </swiper-item>
+      </swiper>
+    </view>
+
+    <!-- 增值服务 -->
+    <view class="increment">
+        <view class="incre-title">增值服务</view>
+        <view class="ul">
+            <view class="li clearfix">
+                <view class="incrementLeft f-l">
+                    <text>基本保险费</text>
+                    <image bindtap="baoxian" src="/assets/images/ico/infoico.png"></image>
+                </view>
+                <view class="incrementRight f-r">
+                  <view class="text">
+                    <text>￥45.00</text>/天
+                  </view>
+                  <switch checked="true"/>
+                </view>
+            </view>
+            <view class="li clearfix">
+                <view class="incrementLeft f-l">
+                    <text>手续费</text>
+                </view>
+                <view class="incrementRight f-r">
+                  <view class="text">
+                    <text>￥35</text>
+                  </view>
+                  <switch checked="true"/>
+                </view>
+            </view>
+            <view class="li clearfix">
+                <view class="incrementLeft f-l">
+                    <text>尊享服务费</text>
+                    <image bindtap="fuwu" src="/assets/images/ico/infoico.png"></image>
+                </view>
+                <view class="incrementRight f-r">
+                  <view class="text">
+                    <text>￥50</text>/天
+                  </view>
+                  <switch checked="true"/>
+                </view>
+            </view>
+            <view class="li clearfix">
+                <view class="incrementLeft f-l">
+                    <text>儿童座椅</text>
+                    <image bindtap="ertong" src="/assets/images/ico/infoico.png"></image>
+                </view>
+                <view class="incrementRight f-r">
+                  <view class="text">
+                    <text>￥45.00</text>/天
+                  </view>
+                  <switch checked="true"/>
+                </view>
+            </view>
+            <view class="li clearfix">
+                <view class="incrementLeft f-l">
+                    <text>支付方式</text>
+                </view>
+                <view class="incrementRight f-r">
+                    <text class="online">在线支付</text>
+                </view>
+            </view>
+        </view>
+    </view>
+
+
+
+
+
+</view>
+
+<view class="bottom">
+    <view class="cancel">
+        <text>2020-09-10 06:00前可免费取消</text>
+    </view>
+    <view class="total clearfix">
+        <view class="total-price f-l">
+            <text class="small-ico">￥</text>
+            <text class="total-text">165.00</text>
+        </view>
+        <view class="total-btn f-r">
+            <text class="mingxi" bindtap="showModal">明细</text>
+            <view class="btn">去付款</view>
+        </view>
+    </view>
+</view>
+
+<!-- modal -->
+<view class="moneylist">
+  <modal title="费用明细" hidden="{{modalHidden}}" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
+    <view class="ul">
+        <view class="li clearfix">
+            <text class="moneylisttext f-l">车辆租金</text>
+            <text class="moneylistPrice f-r">￥20/天X2.0</text>
+        </view>
+        <view class="li clearfix">
+            <text class="moneylisttext f-l">基本保险费</text>
+            <text class="moneylistPrice f-r">￥45/天X2.0</text>
+        </view>
+        <view class="li clearfix">
+            <text class="moneylisttext f-l">手续费</text>
+            <text class="moneylistPrice f-r">￥35</text>
+        </view>
+    </view>
+  </modal>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

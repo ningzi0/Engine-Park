@@ -1,0 +1,168 @@
+<view class="report">
+    <view class="reportitle">
+        <view class="h3">质检报告</view>
+        <text>品质可靠、认证标准</text>
+    </view>
+
+    <view class="reportContent">
+        <view class="reportab">
+            <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+                <block wx:for-items="{{reportarray}}">
+                    <view data-current="{{index}}" class="tab-item {{currentTab == index ?'active':''}}" bindtap="swichNav" >
+                        <view class="pic">
+                            <image src="{{item.images}}"></image>
+                        </view>
+                        <text>{{item.reportText}}</text>
+                    </view>
+                </block>
+            </scroll-view>
+        </view>
+        <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:65vh">
+          <block wx:for="{{reportArray}}">
+            <swiper-item>
+              <scroll-view scroll-y="true" class="scoll-h" id="scroll-h0" style="height:65vh">
+                  <view class="reportCon">
+                      <view class="reportTitle">{{item.reportTitle}}</view>
+                      <view class="reportItem">
+                          <view class="ul">
+                            <block wx:for="{{item.reportItem}}">
+                              <view class="li clearfix">
+                                  <view class="reportext f-l">{{item.reportext}}</view>
+                                  <image class="f-r" src="/assets/images/baogao/renzheng.png"></image>
+                              </view>
+                            </block>
+                          </view>
+                      </view>
+                  </view>
+              </scroll-view>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+
+
+
+
+
+
+
+
+
+
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -21,7 +21,7 @@ Page({
       myicoImg:'/assets/images/ico/myico3.png',
       myicoText:'订单',
       myicoNum:'2',
-      myurl:'/pages/no/no'
+      myurl:'/pages/order/order'
     },
     {
       myicoImg:'/assets/images/ico/myico4.png',

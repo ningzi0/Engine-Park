@@ -1,0 +1,258 @@
+page{
+  background-color: #f4f4f4;
+}
+.rentalshowFirst,.increment{
+  background-color: #fff;
+  margin: 0.5em;
+  border-radius: 10px;
+}
+
+.carpic image{
+  width: 13em;
+  height: 8em;
+}
+.carpic,.carinfo{
+  display: inline-block;
+  vertical-align: top;
+}
+.carinfo {
+  padding: 1em 0;
+}
+.rentalshowCarInfo{
+  border-bottom: 1px solid #eee;
+  margin: 0 0.35em;
+  padding: 0.75em 0;
+}
+.carinfo .carinfoh3{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.carinfo .carinfop{
+  font-size: 0.8em;
+  color: #b4b4b4;
+  margin: 0.25em 0;
+}
+.rentalshowTime{
+  padding: 0.5em;
+}
+.rentalshowTimeinfoitem{
+  font-size: 0.8em;
+  padding: 0.35em 0.5em;
+  margin: 0.5em 0;
+}
+.rentalshowBtn{
+  color: #f1a722;
+  border: 1px solid #f1a722;
+  padding: 0.1em 0.3em;
+  border-radius:5px ;
+  margin:0 0.35em;
+}
+.rentalshowAdd{
+  color: #a5a5a5;
+  margin-left: 0.35em;
+}
+.rentalshowTimetotal,.rentalshowTimeInfo{
+  display: inline-block;
+  vertical-align: middle;
+}
+.rentalshowTimetotal{
+  text-align: center;
+  width: 25%;
+  font-size: 0.85em;
+}
+
+.addinfo{
+  background-color: #fffdf6;
+}
+.addinfologo image{
+  width: 3em;
+  height: 2.35em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.addinfoTitle{
+  padding: 1em 1.5em;
+}
+.addinfologo {
+  margin-bottom: 1em;
+}
+.addinfologo text{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 1em;
+  font-size: 0.9em;
+}
+.addinfoUl{
+  font-size: 0.72em;
+}
+.addinfoLi{
+  margin: 0.75em 0;
+}
+.addinfoliSpan{
+  color: #f1a722;
+  border: 1px solid #f1a722;
+  padding: 0.1em 0.3em;
+  margin-right: 0.75em;
+}
+.tab-h{
+  padding: 0.5em 1em;
+}
+.tab-item {
+  margin: 0 5rpx;
+  display: inline-block;
+  color: #7d7d7d;
+  padding: 0.5em 0.5em;
+  transition: 0.4s;
+  min-height: 1.75em;
+  font-size: 0.95em;
+}
+.tab-item.active {
+  color: #4c4c4c;
+  position: relative;
+}
+.tab-item.active:after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 10px;
+  background:linear-gradient(to right,#f9dd4d,#f4c46f);
+  position: absolute;
+  bottom: 0em;
+  left: 50%;
+  border-radius: 16rpx;
+  transform: translate(-50%,0);
+}
+.Notice{
+  margin: 0.5em;
+  background-color: #fff;
+  border-radius: 10px;
+}
+.item{
+  padding:0.75em 2em;
+  font-size: 0.75em;
+  line-height: 1.7;
+}
+.tabspan{
+  font-size:1.2em ;
+}
+.pointer{
+  margin-right: 0.75em;
+  display: inline-block;
+}
+.tabP{
+  color: #666;
+  display: inline-block;
+  vertical-align: top;
+  width: 92%;
+}
+.tab-content{
+  /* height: 400px; */
+  overflow-y: auto;
+}
+.scoll-h{
+  /* height: 400px;  */
+  /* box-shadow:inset 0px -10px 5px 0 rgba(0,0,0,0.1); */
+  border-radius: 10px;
+}
+
+/*增值服务*/
+.increment{
+  padding:1em;
+}
+.incre-title{
+  font-weight:bold ;
+}
+.incrementLeft{
+  font-size: 0.95em;
+  margin-top:0.3em ;
+}
+.incrementLeft text{
+  display: inline-block;
+  vertical-align: middle;
+}
+.incrementLeft image{
+  width: 1.2em;
+  height: 1.2em;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0.5em;
+}
+.increment .ul{
+  margin-top: 1em;
+}
+.increment .ul .li{
+  padding: 0.75em 0;
+  border-top: 1px solid #eee;
+}
+.incrementRight .text{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.9em;
+  margin-right: 0.5em;
+}
+.incrementRight .text text{
+  color: #f3610c;
+}
+.incrementRight text.online{
+  border: 1px solid #f3610c;
+  padding: 0.5em;
+  display: block;
+  border-radius: 0.2em;
+}
+
+.cancel{
+  background-color: #fef6f3;
+  color: #fe7875;
+  font-size: 0.8em;
+  padding: 0.75em 0.75em;
+}
+.bottom{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  background-color: #fff;
+}
+
+.rentalshow{
+  margin-bottom: 5em;
+}
+
+.total{
+  padding: 0.75em;
+}
+.total-btn .mingxi,.total-btn .btn{
+  display: inline-block;
+  vertical-align: middle;
+}
+.total-btn .mingxi{
+  font-size:0.75em ;
+  color: #bec0bf;
+}
+.total-price{
+  color: #ef550d;
+  font-size:1.1em ;
+  margin-top: 0.5em;
+}
+.total-price .small-ico{
+  font-size:0.75em ;
+}
+.total-btn .btn{
+  font-size: 1.2em;
+  font-weight: bold;
+  background-color: #ff401b;
+  color: #fff;
+  padding: 0.5em 1.2em;
+  border-radius: 10em;
+  margin-left: 0.5em;
+}
+
+
+/*modal*/
+.moneylist .ul .li{
+  padding: 0.5em 0;
+  color: #000;
+}
+.moneylistPrice{
+  color: #fd5001;
+}
+

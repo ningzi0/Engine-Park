@@ -56,9 +56,11 @@ page{
 .submit{
   text-align: center;
   font-size: 0.95em;
-  padding: 1em 0;
   margin-top: 2em;
   background-color: #dddce0;
+}
+.submit navigator{
+  padding: 1em 0;
 }
 
 .submit:active{

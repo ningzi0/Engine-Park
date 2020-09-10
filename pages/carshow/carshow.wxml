@@ -84,7 +84,7 @@
     <view class="carreport">
         <view class="title clearfix">
             <text class="f-l">质检报告：</text>
-            <navigator class="f-r">更多</navigator>
+            <navigator class="f-r" url="/pages/report/report">更多</navigator>
         </view>
         <view class="p">
             <text class="b">车辆骨架：</text>

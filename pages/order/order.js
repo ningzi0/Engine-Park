@@ -11,7 +11,8 @@ Page({
       orderTName:'冰布丁奶茶',
       orderTNum:'1',
       orderTDate:'2020-09-02 11：24',
-      orderTprice:'36.6'
+      orderTprice:'36.6',
+      orderUrl:'/pages/ordershow/ordershow'
     },
     {
       ordernum:'YP202009021124',
@@ -19,7 +20,8 @@ Page({
       orderTName:'冰布丁奶茶',
       orderTNum:'1',
       orderTDate:'2020-09-02 11：24',
-      orderTprice:'36.6'
+      orderTprice:'36.6',
+      orderUrl:'/pages/ordershow/ordershow'
     },
     {
       ordernum:'YP202009021124',
@@ -27,7 +29,8 @@ Page({
       orderTName:'冰布丁奶茶',
       orderTNum:'1',
       orderTDate:'2020-09-02 11：24',
-      orderTprice:'36.6'
+      orderTprice:'36.6',
+      orderUrl:'/pages/ordershow/ordershow'
     }],
     retreatArray:[{
       ordernum:'YP202009021124',
@@ -35,7 +38,8 @@ Page({
       orderTName:'冰布丁奶茶',
       orderTNum:'1',
       orderTDate:'2020-09-02 11：24',
-      orderTprice:'36.6'
+      orderTprice:'36.6',
+      orderUrl:'/pages/ordershow/ordershow'
     }]
   },
   // 滚动切换标签样式
