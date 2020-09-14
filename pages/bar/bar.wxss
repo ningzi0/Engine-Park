@@ -109,6 +109,7 @@
   text-align: center;
   line-height: 1.9em;
   transition: 0.3s;
+  z-index: 22;
 }
 .barConLi navigator{
   display: flex;
@@ -176,11 +177,38 @@
 }
 
 
-
-
-
-
-
-
+.number{
+  position: absolute;
+  top: 50%;
+  transform: translate(0%,-50%);
+  right: 10%;
+  display: none;
+}
+.number view{
+  width:2em;
+  background-color: #faefdc;
+  text-align: center;
+  padding: 0.3em;
+  margin: 0.1em 0;
+}
+.barConUl .cur .number{
+  display: block;
+}
+.barConUl{
+  margin-bottom: 3em;
+}
+.buyBtn{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 55;
+}
+.buyBtn navigator{
+  background-color: #dc7775;
+  color: #fff;
+  text-align: center;
+  padding: 0.75em 0;
+}
 
 

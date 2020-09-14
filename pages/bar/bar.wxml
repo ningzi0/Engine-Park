@@ -42,13 +42,23 @@
                         <view class="price">$ {{item.barPrice}}</view>
                     </view>
                 </navigator>
+                <!-- 数量加减 -->
+                <view class="number">
+                    <view class="num_jia">+</view>
+                    <view class="num_input">
+                        <input class="weui-input" type="number" value="1"/>
+                    </view>
+                    <view class="num_jian">-</view>
+                </view>
             </view>
         </block>
     </view>
 
 
 
-
+<view class="buyBtn">
+    <navigator>购物车结算</navigator>
+</view>
 
 
 

@@ -42,7 +42,32 @@ Page({
       mylistIco:'/assets/images/ico/mylistico4.png',
       mylistText:'我的洗车',
       mylistUrl:'/pages/yuyuexiche/yuyuexiche'
-    }]
+    }],
+    index: 0,
+    showDialog: false,
+    two:false,
+    three:false,
+    multiIndex: [0, 0],
+    date: '',
+  },
+
+  toggleDialog() {
+    this.setData({
+      showDialog: !this.data.showDialog
+    });
+
+  },
+  two() {
+    this.setData({
+      two: !this.data.two
+    });
+
+  },
+  three() {
+    this.setData({
+      three: !this.data.three
+    });
+
   },
   returnPre:function(e){
     let pages = getCurrentPages();
