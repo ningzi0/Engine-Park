@@ -220,3 +220,54 @@
   margin: 0em 0 1em;
 }
 
+
+
+
+
+/* 授权 */
+.shouquan_wrap .zan-dialog__container,.shouquan_wrap .choose{
+  height: 50vh;
+  bottom: 0;
+}
+.shouquan_wrap .shouquan_wrap ,.shouquan_wrap .chooseContent{
+  height: 100%;
+}
+.shouquan_con image{
+  width: 8em;
+  height: 6.4em;
+  position: absolute;
+  top: -2.75em;
+  right: 16%;
+}
+.shouquan_text{
+  margin: 5em 0 4em;
+  padding: 0 1em;
+  line-height: 1.75;
+}
+.shouquan_h3{
+  font-size: 1.3em;
+  margin: 0 0 0.35em;
+}
+.shouquan_p{
+  font-size: 0.85em;
+  color: #999;
+}
+.shouquan_btn{
+  background-color: #ed9700;
+  color: #fff;
+  padding: 0.75em 0;
+  border-radius: 0.25em;
+  text-align: center;
+  margin: 0 1em;
+}
+.shouquan_Privacy{
+  font-size: 0.75em;
+  color: #9e9e9e;
+  text-align: center;
+  margin: 0.75em 2em;
+  line-height: 1.5;
+}
+.shouquan_Privacy navigator{
+  display: inline-block;
+  color: #ed9700;
+}

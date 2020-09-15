@@ -60,8 +60,8 @@
 
 
     <view class="buybtn">
-        <view class="buy cart">加入购物车</view>
-        <view class="buy">购买</view>
+        <view class="buy cart" bindtap="showModal">加入购物车</view>
+        <view class="buy" bindtap="showModal">购买</view>
     </view>
 
 
@@ -81,7 +81,47 @@
 
 
 
-
+<!-- 明细model -->
+<view class="moneylist">
+  <modal title="草莓珍珠奶茶" hidden="{{modalHidden}}" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
+        <view class="scroll">
+            <view class="scroll_item">
+                <view class="title">选择规格</view>
+                <view class="ul">
+                    <block wx:for="{{datas}}" wx:key="{{index}}" wx:for-index="i">
+                        <view class="barTopItem {{currentItem==item.id?'active':''}}" data-id="{{item.id}}" bindtap="tagChoose">
+                            <text>{{item.barText}}</text>
+                        </view>
+                    </block>
+                </view>
+            </view>
+            <view class="scroll_item">
+                <view class="title">是否加冰</view>
+                <view class="ul">
+                    <block wx:for="{{datas2}}" wx:key="{{index}}" wx:for-index="i">
+                        <view class="barTopItem {{currentItem==item.id?'active':''}}" data-id="{{item.id}}" bindtap="tagChoose">
+                            <text>{{item.barText}}</text>
+                        </view>
+                    </block>
+                </view>
+            </view>
+        </view>
+        <view class="number">
+            <view class="title">购买数量</view>
+            <view class="numberInput">
+                <text>-</text>
+                <input type="number" value="1"/>
+                <text class="add">+</text>
+            </view>
+        </view>
+        <view class="price">
+            <view class="price_text">
+                ￥36.00
+            </view>
+            <view class="p">标准套餐|黑珍珠大杯(推荐)|需要餐具</view>
+        </view>
+  </modal>
+</view>
 
 
 

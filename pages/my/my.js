@@ -47,10 +47,15 @@ Page({
     showDialog: false,
     two:false,
     three:false,
+    shouquan:false,
     multiIndex: [0, 0],
     date: '',
   },
-
+  toggleshouquan() {
+    this.setData({
+      shouquan: !this.data.shouquan
+    });
+  },
   toggleDialog() {
     this.setData({
       showDialog: !this.data.showDialog
@@ -83,7 +88,9 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.setData({
+      shouquan: !this.data.shouquan
+    });
   },
 
   /**

@@ -262,7 +262,11 @@
         </view>
     </view>
 
-
+    <view class="increment">
+        <view class="jsr_item">驾驶人</view>
+        <view class="jsr_item">添加<text>1位</text>驾驶人</view>
+        <view class="jsr_item btn" bindtap="showModal2">选择驾驶人</view>
+    </view>
 
 
 
@@ -284,7 +288,7 @@
     </view>
 </view>
 
-<!-- modal -->
+<!-- 明细model -->
 <view class="moneylist">
   <modal title="费用明细" hidden="{{modalHidden}}" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
     <view class="ul">
@@ -304,7 +308,39 @@
   </modal>
 </view>
 
+<!-- 驾驶人model -->
+<view class="moneylist jsr_model">
+  <modal title="选择驾驶人" hidden="{{modalHidden2}}" bindconfirm="modalBindaconfirm2" bindcancel="modalBindcancel2">
+    <view class="new_add">
+      <navigator url="/pages/add_jsr/add_jsr">+新增</navigator>
+    </view>
+    <view class="ul">
+      <radio-group>
+        <view class="li">
+          <view class="jsr_info">
+            <view class="name">李宁</view>
+            <view class="idcard">身份证 341226199203034337</view>
+            <view class="phone">手机号 18798829360</view>
+          </view>
+          <label class="jrs_radio">
+              <radio value="r1" checked="true"/>
+          </label>
+        </view>
 
+        <view class="li">
+          <view class="jsr_info">
+            <view class="name">李宁</view>
+            <view class="idcard">身份证 341226199203034337</view>
+            <view class="phone">手机号 18798829360</view>
+          </view>
+          <label class="jrs_radio">
+              <radio value="r1"/>
+          </label>
+        </view>
+      </radio-group>
+    </view>
+  </modal>
+</view>
 
 
 

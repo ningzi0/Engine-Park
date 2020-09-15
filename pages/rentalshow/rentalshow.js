@@ -9,11 +9,17 @@ Page({
     scrollLeft: 0, //tab滚动条距离左侧距离
     newsTab: ["租车须知", "退改规则","补充说明"],
     modalHidden:true,
+    modalHidden2:true,
   },
   // 模态框点击
   showModal:function(){
     this.setData({
       modalHidden:!this.data.modalHidden
+    })
+  },
+  showModal2:function(){
+    this.setData({
+      modalHidden2:!this.data.modalHidden2
     })
   },
   // 绑定事件开始
@@ -30,7 +36,20 @@ Page({
       this:'【取消】！'
     })
   },
-
+ // 绑定事件开始
+ modalBindaconfirm2:function(){
+  this.setData({
+    modalHidden2:!this.data.modalHidden2,
+    show:!this.data.show,
+    tips:'【确认】',
+  })
+},
+modalBindcancel2:function(){
+  this.setData({
+    modalHidden2:!this.data.modalHidden2,
+    this:'【取消】！'
+  })
+},
 
 // 滚动切换标签样式
 // switchTab: function (e) {

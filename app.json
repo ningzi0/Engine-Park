@@ -24,6 +24,7 @@
     "pages/ordershow/ordershow",
     "pages/report/report",
     "pages/table/table",
+    "pages/add_jsr/add_jsr",
     "pages/logs/logs"
   ],
   "window": {

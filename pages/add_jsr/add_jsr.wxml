@@ -1,0 +1,30 @@
+<view class="add_jsr">
+    <view class="add_jsrul">
+        <view class="add_jsrli">
+            <text>中文姓名</text>
+            <input type="text" placeholder="请输入姓名（例：张三）"/>
+        </view>
+        <view class="add_jsrli">
+            <text>身份证号</text>
+            <input type="text" placeholder="请输入证件号码"/>
+        </view>
+        <view class="add_jsrli">
+            <text>手机号码</text>
+            <input type="text" placeholder="请输入手机号"/>
+        </view>
+    </view>
+    <view class="jsr_btn">保存</view>
+    <view class="content">
+        <view class="read">
+          <checkbox-group>
+              <label>
+                  <checkbox></checkbox>   
+              </label>
+          </checkbox-group>
+            <text>阅读并同意以下内容</text>
+        </view>
+        <view class="content_text">
+          <text>根据旅游法的相关要求，购买旅行度假商品需提供出行人的身份证件信息，并需在服务中出具对应身份证件用于验证，请确保录入信息真实有效。引擎租车将通过加密等方式保护您录入的身份证件信息，且仅在具体交易中授权提供给与您进行交易的商户及相关服务提供方。</text>
+        </view>
+    </view>
+</view>

@@ -154,8 +154,104 @@
 }
 
 
+.title{
+  margin: 0.75em 0 0.35em;
+  font-size: 0.85em;
+}
+.scroll .title{
+  border-top:1px solid #eee ;
+  padding: 0.75em 0;
+}
+.barTopItem{
+  display: inline-block;
+  padding: 0.35em 1em;
+  background-color: rgb(238, 238, 238);
+  border: 1px solid  rgb(238, 238, 238);
+  color: #000;
+  margin:0.5em 0.5em 0 0;
+  border-radius: 0.35em;
+  font-size: 0.85em;
+}
+.barTopItem.active{
+  background-color: #fef9f6;
+  color: #ed9700;
+  border: 1px solid #ed9700;
+}
+.moneylist .ul{
+  max-height: 10em;
+  overflow-y: scroll;
+}
+.scroll::-webkit-scrollbar {
+  width: 4rpx; /*滚动条的宽度*/
+  height: 4rpx;
+  color:#ffffff;
+}
+/*定义滚动条轨道 内阴影+圆角*/
+.scroll::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  background-color:#FFFFFF;
+}
+/*定义滑块 内阴影+圆角*/
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.3);
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+  background-color:#3d3d3d; /*滚动条的颜色*/
+}
 
+.number{
+  margin: 0.75em 0 0;
+  border-top: 1px solid #eee;
+  padding: 0.75em 0;
+}
 
+.number .title{
+  display: inline-block;
+  width: 39%;
+}
+.numberInput{
+  display: inline-block;
+  width: 59%;
+  text-align: right;
+  float:right;
+}
+.numberInput input,.numberInput text{
+  display: inline-block;
+  vertical-align: middle;
+  width: 2em;
+  text-align: center;
+  height: 2em;
+  border: 1px solid #eee;
+  border-radius: 50%;
+  line-height: 2em;
+}
+.numberInput input{
+  border: 0;
+}
+.numberInput text:active{
+  background-color: #eee;
+}
+.numberInput text.add{
+  background-color: #ed9700;
+  color: #fff;
+}
+.numberInput text.add:active{
+  background-color: #ed8600;
+}
+.price{
+  border-top: 1px solid #eee;
+  padding: 0.75em 0;
+}
+.price_text{
+  font-size: 1.1em;
+  color: #ed9700;
+}
+.price .p{
+  font-size: 0.8em;
+  color: #b3b3b3;
+}
 
 
 

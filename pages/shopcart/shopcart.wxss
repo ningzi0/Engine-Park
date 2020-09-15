@@ -1,5 +1,5 @@
 .shopcartTitle{
-  margin:5em 0 0
+  margin:1em 0 0
 }
 .shopcart{
   padding: 0 1em;
@@ -15,7 +15,7 @@
 }
 
 .shopcartContent{
-  margin: 3em 0;
+  margin: 1em 0;
   overflow: hidden;
   padding-bottom: 2em;
 }

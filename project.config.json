@@ -233,6 +233,14 @@
           "id": -1,
           "name": "车辆参数",
           "pathName": "pages/table/table",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "新增驾驶人",
+          "pathName": "pages/add_jsr/add_jsr",
+          "query": "",
           "scene": null
         }
       ]
