@@ -1,6 +1,6 @@
 /* pages/camera/camera.wxss */
 .cameraTitle{
-  margin:1em 0 0
+  margin:1em 0 0.5em
 }
 .camera{
   padding: 0 1.5em;
@@ -15,17 +15,17 @@
   font-weight: bold;
 }
 .cameracontent{
-  margin: 1.5em 0;
+  margin:0 0 1.5em;
 }
 swiper{
-  height: 70vh;
+  height: 87vh;
   border-radius: 0.3em 2em 2em 0.3em;
+  overflow: hidden;
 }
 .cameraPic image{
   width: 100%;
   height: 70vh;
   border-radius: 0.3em 2em 2em 0.3em;
-  box-shadow: 0 0 1em #b8b2b6;
 }
 
 .yuyue{

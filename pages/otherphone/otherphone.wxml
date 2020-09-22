@@ -1,0 +1,136 @@
+<!--pages/otherphone/otherphone.wxml-->
+<view class="ohterphone">
+    <view class="logopic">
+        <image src="/assets/images/logo/logo.png" mode="aspectFill"></image>
+    </view>
+    <view class="input">
+        <view class="input_item">
+            <text>+86</text>
+            <input type="number" placeholder="请输入手机号" placeholder-style="color:#b6b6b6"/>
+        </view>
+        <view class="input_item">
+          <input type="number" placeholder="请输入验证码" placeholder-style="color:#b6b6b6"/>
+          <button bindtap="sendCode" disabled="{{smsFlag}}" style='color:{{sendColor}}'>{{sendTime}}</button>
+        </view>
+    </view>
+    <view class="loginbtn">
+        <button>登录引擎公园</button>
+    </view>
+    <view class="shouquan_Privacy">点击登录引擎公园,即表示已阅读并同意<navigator>《引擎公园隐私条款》</navigator><navigator>《用户服务须知》</navigator></view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

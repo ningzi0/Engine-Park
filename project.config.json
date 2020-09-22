@@ -242,6 +242,26 @@
           "pathName": "pages/add_jsr/add_jsr",
           "query": "",
           "scene": null
+        },
+        {
+          "id": -1,
+          "name": "订单结算",
+          "pathName": "pages/settlement/settlement",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "绑定手机号",
+          "pathName": "pages/bindphone/bindphone",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": "其他手机登录",
+          "pathName": "pages/otherphone/otherphone",
+          "scene": null
         }
       ]
     }

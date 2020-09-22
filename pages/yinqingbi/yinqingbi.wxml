@@ -9,7 +9,13 @@
         <view class="tips">Tips:公园内消费赠送（买车、洗车、保养美容等），消费按各区域有消费上限</view>
         <view class="yinqingbiCon">
             <view class="yinqingbiItem">
-                <view class="yinqingbiMonth">本月<text>▼</text></view>
+                <view class="yinqingbiMonth">
+                    <picker mode="date" value="{{date}}" start="2015-09" end="9999-09" fields="month" bindchange="bindDateChange">
+                        <view class="picker">
+                        当前选择: {{date}}<text>▼</text>
+                        </view>
+                    </picker>
+                </view>
                 <block wx:for="{{yinqingbiArray}}">
                     <view class="yinqingbiItemCon">
                         <view class="yinqingbiLeft">

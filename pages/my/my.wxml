@@ -351,7 +351,7 @@
   <view class="zan-dialog__mask" bindtap="three" />
   <view class="zan-dialog__container">
       <view class='choose'>
-        <view class="chooseTit">选择车型</view>
+        <view class="chooseTit clearfix">选择车型<text class="suc f-r">完成</text></view>
         <view class="chooseContent">
             <view class="allbrand">
               
@@ -409,7 +409,9 @@
                 <view class="shouquan_h3">欢迎登录引擎公园~</view>
                 <view class="shouquan_p">登录后可消费获取引擎币，用于兑换和抽奖，享受更好的服务体验</view>
             </view>
-            <view class="shouquan_btn">微信一键登录</view>
+            <navigator url="/pages/bindphone/bindphone">
+                <view class="shouquan_btn">微信一键登录</view>
+            </navigator>
             <view class="shouquan_Privacy">点击登录引擎公园,即表示已阅读并同意<navigator>《引擎公园隐私条款》</navigator><navigator>《用户服务须知》</navigator></view>
         </view>
 

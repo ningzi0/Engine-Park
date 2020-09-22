@@ -271,3 +271,10 @@
   display: inline-block;
   color: #ed9700;
 }
+
+
+
+
+.chooseTit .suc{
+  padding:0 1em
+}

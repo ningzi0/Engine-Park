@@ -1,0 +1,50 @@
+/* pages/bindphone/bindphone.wxss */
+.bindphone{
+  position: fixed;
+  top: 50%;
+  transform: translate(0%,-65%);
+  width: 100%;
+  text-align: center;
+}
+.bindphone .pic image{
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+}
+.bindphone .name{
+  font-size: 1.3em;
+  margin: 1em 0;
+}
+.bindphone .p{
+  font-size: 0.85em;
+  color: #999;
+}
+.bindbtn{
+  padding: 1em;
+}
+.bindbtn button{
+  width: 100% !important;
+  background-color: #dba871;
+  margin: 4em 0 0.5em;
+}
+.bindbtn button:active{
+  background-color: #ca9862;
+}
+.bindbtn button image{
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.bindbtn button text{
+  color: #fff;
+  font-weight: 500;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 0.95em;
+  padding: 0 0.35em;
+}
+.otherphone{
+  font-size: 0.85em;
+  color: #dba871;
+}

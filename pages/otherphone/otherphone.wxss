@@ -1,0 +1,92 @@
+/* pages/otherphone/otherphone.wxss */
+
+/* pages/bindphone/bindphone.wxss */
+.ohterphone{
+  position: fixed;
+  top: 50%;
+  transform: translate(0%,-65%);
+  width: 100%;
+  text-align: center;
+}
+.logopic image{
+  width: 5em;
+  height: 3.9em;
+  border-radius: 50%;
+  margin-bottom: 1em;
+}
+
+.input_item{
+  border-bottom: 1px solid #e3e3e3;
+  margin: 0 2em;
+}
+.input_item text{
+  display: inline-block;
+  vertical-align: middle;
+  width: 15%;
+  border-right: 1px solid #bfbfbf;
+  text-align: left;
+  margin-right: 9%;
+}
+.input_item input{
+  display: inline-block;
+  vertical-align: middle;
+  width: 75%;
+  text-align: left;
+  padding: 1em 0;
+}
+.input_item button{
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  width: 25% !important;
+  padding: 0;
+  background: none;
+}
+.loginbtn{
+  margin: 2em;
+}
+.loginbtn button{
+  color: #fff;
+  width: 100% !important;
+  background-color: #e9cba7;
+  font-weight: 500;
+}
+.shouquan_Privacy{
+  font-size: 0.75em;
+  color: #9e9e9e;
+  text-align: center;
+  margin: 0.75em 2em;
+  line-height: 1.5;
+}
+.shouquan_Privacy navigator{
+  display: inline-block;
+  color: #ed9700;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

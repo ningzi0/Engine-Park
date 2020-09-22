@@ -25,6 +25,9 @@
     "pages/report/report",
     "pages/table/table",
     "pages/add_jsr/add_jsr",
+    "pages/settlement/settlement",
+    "pages/bindphone/bindphone",
+    "pages/otherphone/otherphone",
     "pages/logs/logs"
   ],
   "window": {

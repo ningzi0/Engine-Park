@@ -1,13 +1,14 @@
 
 <view class="camera">
-    <view class="cameraTitle">
-        <view class="cameraH3">拍摄影棚</view>
-        <view class="cameraText">拍摄日期：2020-08-18</view>
-    </view>
+    
 
     <view class="cameracontent">
         <swiper indicator-dots='true'>
             <swiper-item>
+                <view class="cameraTitle">
+                    <view class="cameraH3">拍摄影棚</view>
+                    <view class="cameraText">拍摄日期：2020-08-18</view>
+                </view>
                 <view class="cameraItem">
                     <view class="cameraPic">
                         <image src="/assets/images/other/car3.jpg" mode="aspectFill"></image>
@@ -15,6 +16,10 @@
                 </view>
             </swiper-item>
             <swiper-item>
+                <view class="cameraTitle">
+                    <view class="cameraH3">拍摄影棚</view>
+                    <view class="cameraText">拍摄日期：2020-08-18</view>
+                </view>
                 <view class="cameraItem">
                     <view class="cameraPic">
                         <image src="/assets/images/other/car3.jpg" mode="aspectFill"></image>

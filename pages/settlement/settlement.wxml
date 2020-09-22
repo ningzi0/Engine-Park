@@ -1,0 +1,78 @@
+<view class="settlement">
+
+    <!-- 产品 -->
+    <view class="products bgwhite">
+      <block wx:for="{{settlement}}">
+        <view class="p_item">
+          <navigator url="{{item.navurl}}">
+              <view class="p_img">
+                  <image src="{{item.imgurl}}" mode="aspectFill"></image>
+              </view>
+              <view class="p_content">
+                  <view class="p_con">
+                      <view class="h3">{{item.title}}</view>
+                      <view class="p">{{item.contnet}}</view>
+                  </view>
+                  <view class="p_price_num">
+                      <view class="h3">￥{{item.price}}</view>
+                      <view class="p">x{{item.number}}</view>
+                  </view>
+              </view>
+          </navigator>
+        </view>
+      </block>
+    </view>
+
+    <!-- 引擎币抵扣 -->
+    <view class="other bgwhite">
+      <view class="Deduction">
+          <view class="title">引擎币抵扣</view>
+          <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+            <view class="picker">
+              {{array[index]}}
+            </view>
+          </picker>
+      </view>
+
+      <!-- 备注 -->
+      <view class="Deduction remarks">
+          <view class="title">备注</view>
+          <view class="title">无备注内容</view>
+      </view>
+
+      <!-- 小计 -->
+      <view class="total">
+          <view class="t_text">
+              共3件商品，小计<text>￥69</text>
+          </view>
+      </view>
+
+    </view>
+
+    <!-- 支付方式 -->
+    <view class="Deduction payment remarks bgwhite">
+        <view class="title">支付方式</view>
+        <view class="title"><image src="/assets/images/ico/payment.png"></image><text>微信支付</text></view>
+    </view>
+
+
+    <!-- 支付 -->
+    <view class="paymentbtn">
+        <view class="paymentText">合计<text>￥69</text></view>
+        <view class="paymentBtn">支付</view>
+    </view>
+
+
+</view>
+
+
+
+
+
+
+
+
+
+
+
+

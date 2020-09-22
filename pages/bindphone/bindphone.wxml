@@ -1,0 +1,74 @@
+<view class="bindphone">
+
+  <view class="pic">
+      <image src="/assets/images/other/headpic.jpg" mode="aspectFill"></image>
+  </view>
+  <view class="name">您好，平头哥</view>
+  <view class="p">为了您的账户安全，请绑定手机号</view>
+
+  <view class="bindbtn">
+      <button>
+        <image src="/assets/images/ico/WeChat.png" mode="aspectFill"></image>
+        <text>微信手机号一键绑定</text>
+      </button>
+      <navigator url="/pages/otherphone/otherphone">
+        <view class="otherphone">使用其他手机号</view>
+      </navigator>
+  </view>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

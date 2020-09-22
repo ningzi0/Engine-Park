@@ -1,0 +1,126 @@
+/* pages/settlement/settlement.wxss */
+page{
+  background-color: #f7f7f7;
+}
+.bgwhite{
+  background-color: #fff;
+  margin: 0.5em 0;
+}
+.p_img image{
+  width: 5em;
+  height: 5em;
+  display: block;
+}
+.p_img{
+  margin: 0.2em;
+  display: inline-block;
+  vertical-align: middle;
+}
+.p_content{
+  display: inline-block;
+  width: 70%;
+  vertical-align: middle;
+  padding: 0 0.5em;
+}
+.p_con{
+  width: 80%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.p_content .h3{
+  margin: 0.25em 0;
+}
+.p_content .p{
+  font-size: 0.75em;
+  color: #999;
+}
+.p_price_num{
+  text-align: right;
+  width: 19%;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.p_item{
+  margin: 0.35em;
+}
+
+.products{
+  border-bottom: 1px solid #f4f4f4;
+}
+.Deduction {
+  padding:1em 0.75em;
+}
+.Deduction .title{
+  display: inline-block;
+}
+.Deduction picker{
+  display: inline-block;
+  float: right;
+  color: #c2c2c2;
+  width: 50%;
+  text-align: right;
+}
+
+.remarks .title{
+  width: 50%;
+}
+.remarks .title:last-child{
+  text-align: right;
+}
+.total{
+  padding: 1em 0.75em;
+  text-align: right;
+  font-size: 0.8em;
+}
+.total text{
+  font-size: 1.5em;
+}
+.payment{
+  margin-bottom: 5em;
+}
+.payment image{
+  display: inline-block;
+  vertical-align: middle;
+  width: 1.75em;
+  height: 1.75em;
+}
+.payment text{
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.paymentbtn{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  background-color: #fff;
+  border-top: 1px solid #efefef;
+}
+.paymentbtn{
+  text-align: right;
+}
+.paymentbtn .paymentText{
+  display: inline-block;
+  padding: 0 1em;
+}
+
+.paymentbtn .paymentBtn{
+  display: inline-block;
+  padding:1.2em 3.5em;
+  color: #fff;
+  background-color: #daa971;
+
+}
+
+
+
+
+
+
+
+
+
+
+
