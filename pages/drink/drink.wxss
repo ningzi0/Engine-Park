@@ -26,7 +26,7 @@
 }
 .drinkTabTitCon{
   display: flex;
-  width: 170%;
+  width: 100%;
 }
 .drinkTabTitle .item{
   flex: 1;
@@ -74,13 +74,12 @@
 }
 .drinkCon{
   display: flex;
-  width: 180%;
   padding-right: 1em;
 }
 .drinkCon-item{
   background-color: #efac37;
   flex: 1;
-  margin: 0 0.35em;
+  margin: 0 0.1em;
   text-align: center;
   border-radius: 1.2em;
   position: relative;
@@ -135,10 +134,30 @@
 }
 .drinkrecomItem{
   margin: 0.75em 0;
+  border-bottom: 1px solid #eee;
+  padding: 0.75em 0;
+}
+.drinkrecomItem navigator {
+  width:85%;
+  display: inline-block;
+  vertical-align: middle;
+}
+.numinput{
+  display: inline-block;
+  vertical-align: middle;
+  width: 15%;
+  text-align: center;
+}
+.numinput button{
+  width: 2em !important;
+  height: 2em;
+  line-height: 2em;
+  padding: 0;
+  border-radius: 50%;
 }
 .drinkrecomText{
   display: inline-block;
-  width: 65%;
+  width: 59%;
   vertical-align: middle;
   padding: 0 1em;
   box-sizing: border-box;
@@ -159,6 +178,305 @@
   text-align: right;
   width: 10%;
 }
+
+.drinkTable {
+  text-align: center;
+}
+.drinkTable .tab-item{
+  display: inline-block;
+  width: 47%;
+  text-align: center;
+  font-size: 1.2em;
+  background-color: #fafafa;
+  font-weight: bold;
+  margin: 0.2em;
+  padding: 0.75em 0;
+  position: relative;
+}
+
+.drinkTable .tab-item.active::after{
+  content: "";
+  display: block;
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background-color: #000;
+  bottom: 7px;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: 55;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+/**/.barConLi{
+  margin: 0 0 1em 1em;
+  position: relative;
+  transition: 0.3s;
+}
+.barConLi .buybtn{
+  position: absolute;
+  top: 50%;
+  transform: translate(0,-50%);
+  width: 2em;
+  height: 2em;
+  background-color: #e77400c5;
+  color: rgba(255, 255, 255, 0.527);
+  font-size: 1.3em;
+  border-radius: 50%;
+  left: -1em;
+  text-align: center;
+  line-height: 1.9em;
+  transition: 0.3s;
+  z-index: 22;
+}
+.barConLi navigator{
+  display: flex;
+  border-bottom: 1px solid #eee;
+  padding: 1em 0.5em;
+  border-radius: 0.35em;
+  transition: 0.3s;
+}
+.barConLi image{
+  width: 7em;
+  height: 7em;
+  flex: 1;
+}
+.barConLi .barConText{
+  flex: 2;
+  padding: 0 0.5em;
+}
+.barConLi .barConText .num{
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #dedede;
+}
+.barConLi .barConText .barConTit{
+  font-size:1.2em ;
+  font-weight: bold;
+  letter-spacing: -0.1em;
+  margin: 0.2em 0;
+} 
+.barConLi .barConText .p{
+  font-size: 0.75em;
+  color: #dedede;
+  max-height: 2.6em;
+  overflow: hidden;
+  margin-bottom: 0.75em;
+}
+.barConLi .barConText .price{
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #efac37;
+}
+.barConUl .cur{
+  margin: 0 1em 1em 0;
+}
+.barConUl .cur navigator{
+  background-color: #f7e7ce;
+  padding-right:1em ;
+}
+.barConUl .cur .buybtn{
+  left: 88%;
+  transform: rotate(45deg) translate(0,-50%);
+}
+.addcart{
+  display: none;
+}
+.barConUl .cur .addcart{
+  display: block;
+  height:2.9em;
+  font-weight: bold;
+  color: #dc7775;
+  line-height: 1.95;
+  font-size: 0.85em;
+}
+.barConUl .cur .p{
+  display: none;
+}
+
+
+.number{
+  position: absolute;
+  top: 50%;
+  transform: translate(0%,-50%);
+  right: 10%;
+  display: none;
+}
+.number view{
+  width:2em;
+  background-color: #faefdc;
+  text-align: center;
+  padding: 0.3em;
+  margin: 0.1em 0;
+}
+.barConUl .cur .number{
+  display: block;
+}
+.barConUl{
+  margin-bottom: 3em;
+}
+.buyBtn{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  z-index: 55;
+}
+.buyBtn navigator{
+  background-color: #dc7775;
+  color: #fff;
+  text-align: center;
+  padding: 0.75em 0;
+}
+
+.settlement{
+  background-color: #f0f0f0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 0 1em rgba(0,0,0,0.15);
+  z-index: 555;
+}
+.settlement .s_price{
+  padding: 1.2em 0 1.2em 5em;
+}
+.settlement .s_btn{
+  background-color: #efac37;
+  color: #fff;
+  padding: 1.2em 3em;
+}
+.s_cart{
+  position: absolute;
+  width: 3em;
+  height: 3em;
+  background-color: #fff;
+  border-radius:50% ;
+  line-height: 3em;
+  box-shadow: 0 0 1em rgba(0,0,0,0.15);
+  top: -1em;
+  left: 0.5em;
+  text-align: center;
+  font-size: 1.2em;
+}
+.s_cart text{
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  line-height: 1em;
+  background-color: #efac37;
+  border-radius:50%;
+  color: #fff;
+  font-size: 0.75em;
+  padding: 0.35em;
+}
+
+
+/**/
+/**/
+.zan-dialog__mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  background: rgba(0, 0, 0, 0.4);
+  display: none;
+}
+
+.zan-dialog__container {
+    position: fixed;
+    width: 100%;
+    min-height: 20vh;
+    background: #fff;
+    transform: translateY(300%);
+    z-index: 12;
+    border-radius: 20rpx 20rpx 0 0;
+    bottom: 118rpx;
+    transition:0.4s;
+}
+
+.zan-dialog--show .zan-dialog__container {
+  transform: translateY(0);
+  transition:0.4s;
+}
+
+.zan-dialog--show .zan-dialog__mask {
+  display: block;
+}
+.brandchosse text{
+  display: block;
+  padding: 0.75em 0;
+  border-bottom: 1px solid #eee;
+}
+.buycart_title{
+  display: flex;
+}
+.buycart_t_Item{
+  flex: 1;
+  padding: 0.5em;
+  font-size: 0.85em;
+}
+.alldel{
+  text-align: right;
+  color: #848484;
+}
+.buycartCon_item{
+  margin: 0.5em;
+  padding: 0 0 0.75em;
+}
+.buycartCon_item .pic{
+  display: inline-block;
+  vertical-align: middle;
+}
+.buycartCon_item .pic image{
+  width: 5em;
+  height: 5em;
+  display: block;
+}
+.buycartConText{
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0 0.5em;
+  width: 53%;
+}
+.buycartConText .buycartConH3{
+  padding: 0.75em 0;
+}
+.buycartConNumber{
+  display: inline-block;
+  width:10%;
+  vertical-align: middle;
+}
+.buycartConNumber .add,.buycartConNumber .jian{
+  width: 2em;
+  height: 2em;
+  text-align: center;
+  line-height: 2em;
+  border-radius: 50%;
+}
+.buycartConNumber input{
+  width: 2em;
+  text-align: center;
+  padding: 0.25em 0;
+}
+.buycartConNumber .add{
+  background-color: #efac37;
+  color: #fff;
+}
+.buycartConNumber .jian{
+  border: 1px solid #eee;
+}
+
+
+
+
 
 
 

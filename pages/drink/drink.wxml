@@ -1,66 +1,192 @@
 <view class="drinkWrap">
-    <view class="drinkTitle">饮品<text>/Drink</text></view>
+    <!-- <view class="drinkTitle">饮品<text>/Drink</text></view> -->
+
+    <view class="drinkTable">
+        <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+            <block wx:for-items="{{reportarray}}">
+                <view data-current="{{index}}" class="tab-item {{currentTab == index ?'active':''}}" bindtap="swichNav" >
+                    <text>{{item.dinktabText}}</text>
+                </view>
+            </block>
+        </scroll-view>
+    </view>
+
     <view class="search-drink">
-        <input type="text" placeholder="您想喝点什么饮料呢？" placeholder-style="color:#e0e0e0"></input>
-    </view>
-
-    <view class="drinkTabTitle">
-        <view class="drinkTabTitCon">
-            <block wx:for="{{drinktitledatas}}" wx:key="{{index}}" wx:for-index="i">
-                <view class="item {{currentItem==item.id?'active':''}}" data-id="{{item.id}}" bindtap="tagChoose">{{item.drinkText}}</view>
-            </block>
-        </view>
+        <input type="text" placeholder="您想喝点什么呢？" placeholder-style="color:#e0e0e0"></input>
     </view>
 
 
-    <view class="drinkContent">
-        <view class="drinkCon">
-            <block wx:for="{{drinkCon}}">
-                <view class="drinkCon-item">
-                    <view class="drinklabel {{item.labelClass}}">{{item.drinklabel}}</view>
-                    <navigator url="{{item.drinkUrl}}">
-                        <view class="drinkPic">
-                            <image src="{{item.drinkPic}}" mode="aspectFill"></image>
+    <!-- 饮品 -->
+    <swiper class="tab-content" current="{{currentTab}}" duration="300" bindchange="switchTab" style="height:80vh">
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" id="scroll-h0" style="height:80vh">
+                    <view class="drink">
+                        <view class="drinkTabTitle">
+                            <view class="drinkTabTitCon">
+                                <block wx:for="{{drinktitledatas}}" wx:key="{{index}}" wx:for-index="i">
+                                    <view class="item {{currentItem==item.id?'active':''}}" data-id="{{item.id}}" bindtap="tagChoose">{{item.drinkText}}</view>
+                                </block>
+                            </view>
                         </view>
-                        <text>{{item.drinkText}}</text>
-                    </navigator>
-                </view>
-            </block>
-            
-        </view>
-    </view>
-
-
-    
-    <view class="drinkrecom">
-        <view class="drinkrecomTitle">饮品推荐</view>
-        <view class="drinkrecomCon">
-            <block wx:for="{{drinkrecomCon}}">
-                <view class="drinkrecomItem">
-                    <navigator url="{{item.drinkrecomUrl}}">
-                        <view class="drinkrecomPic">
-                            <image src="{{item.drinkrecomPic}}" mode="aspectFill"></image>
+                        <view class="drinkContent">
+                            <view class="drinkCon">
+                                <block wx:for="{{drinkCon}}">
+                                    <view class="drinkCon-item">
+                                        <view class="drinklabel {{item.labelClass}}">{{item.drinklabel}}</view>
+                                        <navigator url="{{item.drinkUrl}}">
+                                            <view class="drinkPic">
+                                                <image src="{{item.drinkPic}}" mode="aspectFill"></image>
+                                            </view>
+                                            <text>{{item.drinkText}}</text>
+                                        </navigator>
+                                    </view>
+                                </block>
+                            </view>
                         </view>
-                        <view class="drinkrecomText">
-                            <view class="h3">{{item.drinkrecomTexth3}}</view>
-                            <text>{{item.drinkrecomTexttext}}</text>
+                        <view class="drinkrecom">
+                            <view class="drinkrecomTitle">饮品推荐</view>
+                            <view class="barConUl">
+                                <block wx:for="{{barConArray}}">
+                                    <view  class="barConLi {{item.active==1?'cur':''}}">
+                                        <view class="buybtn" data-num="{{item.id}}" bindtap="menuClick">+</view>
+                                        <navigator url="{{item.barurl}}">
+                                            <image src="{{item.barimg}}" mode="aspectFill"></image>
+                                            <view class="barConText">
+                                                <!-- <view class="num">#{{item.barNum}}</view> -->
+                                                <view class="barConTit">{{item.barTitle}}</view>
+                                                <view class="p">{{item.barP}}</view>
+                                                <view class="addcart">已加入购物车</view>
+                                                <view class="price">$ {{item.barPrice}}</view>
+                                            </view>
+                                        </navigator>
+                                        <!-- 数量加减 -->
+                                        <view class="number">
+                                            <view class="num_jia">+</view>
+                                            <view class="num_input">
+                                                <input class="weui-input" type="number" value="1"/>
+                                            </view>
+                                            <view class="num_jian">-</view>
+                                        </view>
+                                    </view>
+                                </block>
+                            </view>
                         </view>
-                        <view class="drinkrecomNum">{{item.drinkrecomNum}}</view>
-                    </navigator>
-                </view>
-            </block>
-        </view>
-    </view>
+                    </view>
+            </scroll-view>
+        </swiper-item>
 
+        <!-- 酒水区 -->
+        <swiper-item>
+            <scroll-view scroll-y="true" class="scoll-h" id="scroll-h0" style="height:80vh">
+                    <view class="drink">
+                        <view class="drinkTabTitle">
+                            <view class="drinkTabTitCon">
+                                <block wx:for="{{jiutitledatas}}" wx:key="{{index}}" wx:for-index="i">
+                                    <view class="item {{currentItem==item.id?'active':''}}" data-id="{{item.id}}" bindtap="tagChoose">{{item.drinkText}}</view>
+                                </block>
+                            </view>
+                        </view>
+                        <view class="drinkContent">
+                            <view class="drinkCon">
+                                <block wx:for="{{jiuCon}}">
+                                    <view class="drinkCon-item">
+                                        <view class="drinklabel {{item.labelClass}}">{{item.drinklabel}}</view>
+                                        <navigator url="{{item.drinkUrl}}">
+                                            <view class="drinkPic">
+                                                <image src="{{item.drinkPic}}" mode="aspectFill"></image>
+                                            </view>
+                                            <text>{{item.drinkText}}</text>
+                                        </navigator>
+                                    </view>
+                                </block>
+                            </view>
+                        </view>
+                        <view class="drinkrecom">
+                            <view class="drinkrecomTitle">受欢迎的酒</view>
+                            <view class="barConUl">
+                                <block wx:for="{{jiuConArray}}">
+                                    <view  class="barConLi {{item.active==1?'cur':''}}">
+                                        <view class="buybtn" data-num="{{item.id}}" bindtap="menuClick">+</view>
+                                        <navigator url="{{item.barurl}}">
+                                            <image src="{{item.barimg}}" mode="aspectFill"></image>
+                                            <view class="barConText">
+                                                <!-- <view class="num">#{{item.barNum}}</view> -->
+                                                <view class="barConTit">{{item.barTitle}}</view>
+                                                <view class="p">{{item.barP}}</view>
+                                                <view class="addcart">已加入购物车</view>
+                                                <view class="price">$ {{item.barPrice}}</view>
+                                            </view>
+                                        </navigator>
+                                        <!-- 数量加减 -->
+                                        <view class="number">
+                                            <view class="num_jia">+</view>
+                                            <view class="num_input">
+                                                <input class="weui-input" type="number" value="1"/>
+                                            </view>
+                                            <view class="num_jian">-</view>
+                                        </view>
+                                    </view>
+                                </block>
+                            </view>
+                        </view>
+                    </view>
+            </scroll-view>
+        </swiper-item>
+    </swiper>
+</view>
 
-
+<view class="settlement clearfix">
+    <view class="s_price f-l">￥9</view>
+    <view class="s_btn f-r">结算</view>
+    <view class="s_cart" bindtap="togglebuycart">🛒<text>1</text></view>
 </view>
 
 
 
 
+<!-- 购物车 -->
+<view class="zan-dialog buycart_wrap {{ buycart ? 'zan-dialog--show' : '' }}">
+    <view class="zan-dialog__mask" mut-bind:tap="togglebuycart" >
+        <view class="zan-dialog__container" catchtap="stop">
+            
+                <view class="chooseContent">
+                    <view class="buycart_con">
+                        <view class="buycart_title">
+                            <view class="buycart_t_Item allselect">
+                                <radio checked="checked"></radio>
+                                <text>全选</text>
+                            </view>
+                            <view class="buycart_t_Item alldel">
+                                <text>清空购物车</text>
+                            </view>
+                        </view>
 
 
+                        <view class="buycartContent">
+                            <view class="buycartCon_item">
+                                <radio checked="checked"></radio>
+                                <view class="pic">
+                                    <image src="/assets/images/other/drink.jpg" mode="aspectFill"></image>
+                                </view>
+                                <view class="buycartConText">
+                                    <view class="buycartConH3">草莓珍珠奶茶</view>
+                                    <view class="buycartConPrice">￥9</view>
+                                </view>
+                                <view class="buycartConNumber">
+                                    <view class="add">+</view>
+                                    <input type="number" value="1"/>
+                                    <view class="jian">-</view>
+                                </view>
+                            </view>
+                        </view>
+
+
+                    </view>
+                </view>
+            
+        </view>
+    </view>
+</view>
 
 
 
