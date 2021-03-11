@@ -261,6 +261,14 @@
           "id": -1,
           "name": "其他手机登录",
           "pathName": "pages/otherphone/otherphone",
+          "query": "",
+          "scene": null
+        },
+        {
+          "id": -1,
+          "name": " 汽车列表 ",
+          "pathName": "pages/carlist/carlist",
+          "query": "",
           "scene": null
         }
       ]

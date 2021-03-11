@@ -44,11 +44,13 @@ Page({
       menuSrc:'/assets/images/ico/xiangji.png',
       menuText:'拍摄影棚',
       url:'/pages/camera/camera'
-    },{
-      menuSrc:'/assets/images/ico/yinliao.png',
-      menuText:'引擎饮品',
-      url:'/pages/drink/drink'
-    }]
+    },
+    // {
+    //   menuSrc:'/assets/images/ico/yinliao.png',
+    //   menuText:'引擎饮品',
+    //   url:'/pages/drink/drink'
+    // }
+  ]
   },
 
   /**

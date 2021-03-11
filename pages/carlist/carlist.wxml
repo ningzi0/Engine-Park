@@ -1,0 +1,639 @@
+<!--pages/list/list.wxml-->
+<view class="fixed">
+    <!-- 搜索车辆 -->
+    <view class="search">
+        <input type="search" placeholder="搜索您想要的车辆" placeholder-style="color:#333"></input>
+        <image src="/assets/images/ico/sear.png"></image>
+    </view>
+    <!-- 筛选 -->
+    <view class="screen">
+        <view class="ul">
+            <view class="li">
+                <picker bindchange="bindPickerChange" value="{{indexpx}}" range="{{array}}">{{array[indexpx]}}</picker>
+                <!-- <text>智能排序</text> -->
+                <image src="/assets/images/ico/down.png"></image>
+            </view>
+            <view class="li" data-index="1" bindtap='chooseSezi' >
+                <text>品牌</text>
+                <image src="/assets/images/ico/down.png"></image>
+            </view>
+            <view class="li" data-index="2" bindtap="chooseSezi">
+                <text>价格</text>
+                <image src="/assets/images/ico/down.png"></image>
+            </view>
+            <view class="li" data-index="3" bindtap="chooseSezi">
+                <text>筛选</text>
+                <image src="/assets/images/ico/down.png"></image>
+            </view>
+        </view>
+    </view>
+</view>
+
+<!-- 列表内容 -->
+
+<view class="listCon">
+    <view class="ul">
+      <block wx:for="{{carlistArray}}">
+        <view class="li">
+            <navigator url="/pages/carshow/carshow">
+                <view class="img">
+                    <image src="{{item.imgSrc}}" mode="aspectFill"></image>
+                    <view class="cias">CIAS</view>
+                </view>
+                <view class="text">
+                    <view class="h3">{{item.name}} </view>
+                    <view class="data">{{item.info}}</view>
+                    <view class="price">
+                        <view class="del">指导价:{{item.delprice}}万</view>
+                        <view class="carprice">￥{{item.price}}万</view>
+                    </view>
+                </view>
+            </navigator>
+        </view>
+      </block>
+        
+    </view>
+</view>
+
+
+
+<!-- 品牌选择 -->
+<!--隐藏区域  -->
+<view class='maskLayer' wx:if="{{chooseSize}}" bindtap='hideModal'></view>
+<view class='choose' wx:if="{{index==1}}" animation='{{animationData}}'>
+    <view class="chooseTit">选择品牌</view>
+    <view class="chooseContent">
+
+        <!-- 字母筛选 -->
+        <view class="Letter">
+            <view class="li">热</view>
+            <view class="li">*</view>
+            <view class="li">A</view>
+            <view class="li">B</view>
+            <view class="li">C</view>
+            <view class="li">D</view>
+            <view class="li">E</view>
+            <view class="li">F</view>
+            <view class="li">G</view>
+            <view class="li">H</view>
+            <view class="li">I</view>
+            <view class="li">J</view>
+            <view class="li">K</view>
+            <view class="li">L</view>
+            <view class="li">M</view>
+            <view class="li">N</view>
+            <view class="li">O</view>
+            <view class="li">P</view>
+            <view class="li">Q</view>
+            <view class="li">R</view>
+            <view class="li">S</view>
+            <view class="li">T</view>
+            <view class="li">U</view>
+            <view class="li">V</view>
+            <view class="li">W</view>
+            <view class="li">X</view>
+            <view class="li">Y</view>
+            <view class="li">Z</view>
+        </view>
+
+
+        <view class="hotbrand">
+            <view class="brandtitle">热门品牌</view>
+            <view class="hotbrandCon">
+                <view class="ul">
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p6-dcd.byteimg.com/img/mosaic-legacy/1dd5000048d6334c26b4~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">奥迪</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p6-dcd.byteimg.com/img/mosaic-legacy/1dd50000190229abeec8~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">奔驰</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p3-dcd.byteimg.com/img/mosaic-legacy/1dd5000018fc7c108922~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">本田</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p3-dcd.byteimg.com/img/mosaic-legacy/1dd5000018efd5725196~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">长城</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p1-dcd.byteimg.com/img/motor-img/343173efb2ab28cda1b0e5a5b49dab8e~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">大众</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p1-dcd.byteimg.com/img/motor-img/4867710a834bd648ba55797ba5e37f14~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">宝马</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p1-dcd.byteimg.com/img/motor-img/c8eb9d15ac7e99904711b5ffe5538777~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">丰田</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p1-dcd.byteimg.com/img/mosaic-legacy/1dd50000190c8e84e016~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">福特</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p1-dcd.byteimg.com/img/mosaic-legacy/1dd5000019779bf8dfb2~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">日产</view>
+                    </view>
+                    <view class="li">
+                        <view class="ico">
+                            <image src="https://p9-dcd.byteimg.com/img/mosaic-legacy/1dd50000196a38ee3f43~tplv-resize:100:0.png"></image>
+                        </view>
+                        <view class="text">雪佛兰</view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="allbrand">
+            <!-- 不限品牌 -->
+            <view class="brandContent">
+                <view class="title">*</view>
+                <view class="brandCon">
+                    <view class="ul">
+                        <view class="li">
+                            <text>不限品牌</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <!-- 全部品牌 -->
+            <view class="brandContent">
+                <view class="title">A</view>
+                <view class="brandCon">
+                    <view class="ul">
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p6-dcd.byteimg.com/img/mosaic-legacy/1dd5000048d6334c26b4~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>奥迪</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p1-dcd.byteimg.com/img/mosaic-legacy/1dd5000018f89ff63f66~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>阿斯顿·马丁</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p1-dcd.byteimg.com/img/mosaic-legacy/1dd500003399ce089bef~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>阿尔法·罗密欧</text>
+                        </view>
+                    </view>
+                </view>
+
+                <view class="title">B</view>
+                <view class="brandCon">
+                    <view class="ul">
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p6-dcd.byteimg.com/img/mosaic-legacy/1dd50000190229abeec8~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>奔驰</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p1-dcd.byteimg.com/img/motor-img/4867710a834bd648ba55797ba5e37f14~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>宝马</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p1-dcd.byteimg.com/img/mosaic-legacy/1dd5000018fc7c108922~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>本田</text>
+                        </view>
+                    </view>
+                </view>
+
+                <view class="title">C</view>
+                <view class="brandCon">
+                    <view class="ul">
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p1-dcd.byteimg.com/img/motor-img/a256cd3dd412661fb6e6e416507f1431~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>长安</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p3-dcd.byteimg.com/img/mosaic-legacy/bef5000000033b7cfb23~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>长安欧尚</text>
+                        </view>
+                        <view class="li">
+                            <view class="img">
+                                <image src="https://p6-dcd.byteimg.com/img/mosaic-legacy/1dd5000018efd5725196~tplv-resize:100:0.png"></image>
+                            </view>
+                            <text>长城</text>
+                        </view>
+                    </view>
+                </view>
+
+            </view>
+        </view>
+
+    </view>
+
+</view>
+
+
+<!-- 价格选持 -->
+<view class='choose' wx:if="{{index==2}}" animation='{{animationData}}'>
+    <view class="chooseTit">选择价格</view>
+    <view class="pricechoose">
+        <view class="ul">
+            <view class="li">
+                <text>不限</text>
+            </view>
+            <view class="li">
+                <text>3万以下</text>
+            </view>
+            <view class="li">
+                <text>3-5万</text>
+            </view>
+            <view class="li">
+                <text>5-7万</text>
+            </view>
+            <view class="li">
+                <text>7-9万</text>
+            </view>
+            <view class="li">
+                <text>9-12万</text>
+            </view>
+            <view class="li">
+                <text>12-16万</text>
+            </view>
+            <view class="li">
+                <text>16-20万</text>
+            </view>
+            <view class="li">
+                <text>20万以上</text>
+            </view>
+        </view>
+        
+
+
+        <!-- 自定义价格 -->
+        <view class="priceChooseCon">
+            <view class="priceC-title">
+                <view class="priceCleft">
+                    自定义价格<text>(单位：万)</text>
+                </view>
+                <view class="priceCright">
+                    <navigator class="btn">确定</navigator>
+                </view>
+            </view>
+        </view>
+
+
+
+        <!-- 自定义价格滑块 -->
+        
+        <view class='sliderHCon'>
+        <!-- <view class='showMoney'>
+            <text class='MoneyValue'>￥{{min}}</text>
+            <text class='MoneyValue'>￥{{max}}</text>
+        </view> -->
+        
+        <view class='twoSlider'>
+            <view class='select-construct'>
+            <view class='select-area'>
+                <view class='slider-container'>
+                <view class='leftSliderPrice sliderPrice' style='left:{{leftSliderPriceWidthX}};'>
+                    <view class='sliderView'>
+                    ￥{{slider1Value*scale}}万
+                    </view>
+                </view>
+                <slider style='width:{{slider1W+"%"}}' class='slider-left' min='{{min}}' max='{{slider1Max}}' color='#76919c'
+                selected-color='#e5e5e5' bindchanging='changing' catchtouchstart='changeStart' bindchange='changed' data-idx='1'></slider>
+                <view class='rightSliderPrice sliderPrice' style='right:{{rightSliderPriceWidthX}};'>
+                    <view class='sliderView'>
+                    ￥{{slider2Value*scale}}万以下
+                    </view>
+                </view>
+                <slider wx:if='{{!change}}' style='width:{{slider2W+"%"}}' class='slider-right' min='{{slider2Min}}' max='{{max}}' color='#e5e5e5'
+                selected-color='#76919c' bindchanging='changing'catchtouchstart='changeStart'  bindchange='changed' data-idx='2'></slider>
+                </view>
+            </view>
+            </view>
+        </view>
+        </view>
+
+
+
+
+    </view>
+</view>
+
+<!-- 筛选 -->
+<view class='choose' wx:if="{{index==3}}" animation='{{animationData}}'>
+    <view class="chooseTit">筛选</view>
+    <view class="chooseScreen chooseContent">
+        <view class="cartype c-ScreenCon">
+            <view class="tit">车型</view>
+            <view class="ul">
+                <view class="li on">
+                    <view class="ico">
+                        <image src="../../images/jc.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="text">轿车</view>
+                </view>
+                <view class="li">
+                    <view class="ico">
+                        <image src="../../images/suv.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="text">SUV</view>
+                </view>
+                <view class="li">
+                    <view class="ico">
+                        <image src="../../images/mpv.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="text">MPV</view>
+                </view>
+                <view class="li">
+                    <view class="ico">
+                        <image src="../../images/pc.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="text">跑车</view>
+                </view>
+                <view class="li">
+                    <view class="ico">
+                        <image src="../../images/pk.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="text">皮卡</view>
+                </view>
+                <view class="li">
+                    <view class="ico">
+                        <image src="../../images/wm.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="text">微面</view>
+                </view>
+                <view class="li">
+                    <view class="ico">
+                        <image src="../../images/wk.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="text">微卡</view>
+                </view>
+                <view class="li">
+                    <view class="ico">
+                        <image src="../../images/qk.png" mode="aspectFill"></image>
+                    </view>
+                    <view class="text">轻客</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="c-ScreenCon objective">
+            <view class="tit">购车目的</view>
+            <view class="pricechoose ">
+                <view class="ul">
+                    <view class="li on">
+                        <text>家用/带娃</text>
+                    </view>
+                    <view class="li">
+                        <text>练手/代步/通勤</text>
+                    </view>
+                    <view class="li">
+                        <text>拉人/拉货</text>
+                    </view>
+                    <view class="li">
+                        <text>商务接待</text>
+                    </view>
+                    <view class="li">
+                        <text>章显个性</text>
+                    </view>
+                    <view class="li">
+                        <text>长途出行</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="c-ScreenCon objective">
+            <view class="tit">变速箱</view>
+            <view class="pricechoose ">
+                <view class="ul">
+                    <view class="li">
+                        <text>手动</text>
+                    </view>
+                    <view class="li on">
+                        <text>自动</text>
+                    </view>
+                    
+                </view>
+            </view>
+        </view>
+
+
+        <view class="c-ScreenCon objective">
+            <view class="tit">车龄要求</view>
+            <view class="pricechoose ">
+                <view class="ul">
+                    <view class="li">
+                        <text>2年以下</text>
+                    </view>
+                    <view class="li">
+                        <text>4年以下</text>
+                    </view>
+                    <view class="li">
+                        <text>6年以下</text>
+                    </view>
+                    <view class="li">
+                        <text>8年以下</text>
+                    </view>
+                    <view class="li">
+                        <text>10年以下</text>
+                    </view>
+                    <view class="li">
+                        <text>不限</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="c-ScreenCon objective">
+            <view class="tit">行驶里程</view>
+            <view class="pricechoose ">
+                <view class="ul">
+                    <view class="li">
+                        <text>0-3万公里</text>
+                    </view>
+                    <view class="li">
+                        <text>6万公里以下</text>
+                    </view>
+                    <view class="li">
+                        <text>9万公里以下</text>
+                    </view>
+                    <view class="li">
+                        <text>12万公里以下</text>
+                    </view>
+                    <view class="li">
+                        <text>不限</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="c-ScreenCon objective">
+            <view class="tit">排量</view>
+            <view class="pricechoose ">
+                <view class="ul">
+                    <view class="li">
+                        <text>1.0</text>
+                    </view>
+                    <view class="li">
+                        <text>2.0</text>
+                    </view>
+                    <view class="li">
+                        <text>3.0</text>
+                    </view>
+                    <view class="li">
+                        <text>4.0</text>
+                    </view>
+                    <view class="li">
+                        <text>不限</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+        
+        <view class="c-ScreenCon objective">
+            <view class="tit">座位数</view>
+            <view class="pricechoose ">
+                <view class="ul">
+                    <view class="li">
+                        <text>2座</text>
+                    </view>
+                    <view class="li">
+                        <text>4座</text>
+                    </view>
+                    <view class="li">
+                        <text>5座</text>
+                    </view>
+                    <view class="li">
+                        <text>6座</text>
+                    </view>
+                    <view class="li">
+                        <text>7座以上</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="c-ScreenCon objective">
+            <view class="tit">排放标准</view>
+            <view class="pricechoose ">
+                <view class="ul">
+                    <view class="li">
+                        <text>国四</text>
+                    </view>
+                    <view class="li">
+                        <text>国五</text>
+                    </view>
+                    <view class="li">
+                        <text>国六</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="c-ScreenCon objective">
+            <view class="tit">燃油类型</view>
+            <view class="pricechoose ">
+                <view class="ul">
+                    <view class="li">
+                        <text>汽油</text>
+                    </view>
+                    <view class="li">
+                        <text>柴油</text>
+                    </view>
+                    <view class="li">
+                        <text>电动</text>
+                    </view>
+                    <view class="li">
+                        <text>油电混合</text>
+                    </view>
+                    <view class="li">
+                        <text>其他</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="c-ScreenCon objective">
+            <view class="tit">驱动类型</view>
+            <view class="pricechoose ">
+                <view class="ul">
+                    <view class="li">
+                        <text>两驱</text>
+                    </view>
+                    <view class="li">
+                        <text>四驱</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="c-ScreenCon objective">
+            <view class="tit">国别</view>
+            <view class="pricechoose ">
+                <view class="ul">
+                    <view class="li">
+                        <text>德系</text>
+                    </view>
+                    <view class="li">
+                        <text>日系</text>
+                    </view>
+                    <view class="li">
+                        <text>法系</text>
+                    </view>
+                    <view class="li">
+                        <text>美系</text>
+                    </view>
+                    <view class="li">
+                        <text>韩系</text>
+                    </view>
+                    <view class="li">
+                        <text>国产</text>
+                    </view>
+                    <view class="li">
+                        <text>其他</text>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+
+
+    <!-- 按钮 -->
+    <view class="sub">
+        <view class="reset">重置</view>
+        <view class="submit">确定</view>
+    </view>
+
+</view>
+

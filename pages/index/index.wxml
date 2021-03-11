@@ -83,36 +83,77 @@
         </view>
         <view class="tabCon-item">
             <!-- <image src="/assets/images/other/carbg2.jpg" mode="aspectFill"></image> -->
-            <navigator url="/pages/drink/drink">
+            <navigator url="/pages/carlist/carlist">
                 <view class="carbgText">
-                    <view class="h3">饮品推荐</view>
-                    <view class="p">引擎饮品 畅想其中</view>
+                    <view class="h3">体验不同名车乐趣</view>
+                    <view class="p">豪车、名车玩不停[20-80万]</view>
                 </view>
             </navigator>
         </view>
         <view class="tabCon-item">
-            <navigator url="/pages/drink/drink">
-                <image src="/assets/images/other/drink.jpg" mode="aspectFill"></image>
+            <navigator url="/pages/carlist/carlist">
+                <image src="/assets/images/other/carshow4.jpg" mode="aspectFill"></image>
             </navigator>
         </view>
         <view class="tabCon-item drink">
-            <navigator url="/pages/drink/drink">
-                <text>Drink</text>
+            <navigator url="/pages/recommend/recommend">
+                <text>Luxury car</text>
             </navigator>
         </view>
         <view class="tabCon-item">
-            <navigator url="/pages/bar/bar">
-                <image src="/assets/images/other/beer1.jpg" mode="aspectFill"></image>
+            <navigator url="/pages/carlist/carlist">
+                <image src="/assets/images/other/jeep.jpg" mode="aspectFill"></image>
             </navigator>
         </view>
         <view class="tabCon-item drink">
-            <navigator url="/pages/bar/bar">
-                 <text>Beer</text>
+            <navigator url="/pages/carlist/carlist">
+                <view class="carbgText">
+                    <view class="h3">滇藏、川藏自驾</view>
+                    <view class="p">开启探险之旅[SUV]</view>
+                </view>
             </navigator>
         </view>
         <view class="tabCon-item">
-            <navigator url="/pages/bar/bar">
-                <image src="/assets/images/other/beer2.jpg" mode="aspectFill"></image>
+            <navigator url="/pages/carlist/carlist">
+                <image src="/assets/images/other/jeep2.jpg" mode="aspectFill"></image>
+            </navigator>
+        </view>
+        <view class="tabCon-item">
+            <!-- <image src="/assets/images/other/carbg.jpg" mode="aspectFill"></image> -->
+            <navigator url="/pages/carlist/carlist">
+                <view class="carbgText">
+                    <view class="h3">公司商务</view>
+                    <view class="p">既有面子又省银子[MPV、中大型]</view>
+                </view>
+            </navigator>
+        </view>
+        <view class="tabCon-item">
+            <navigator url="/pages/carlist/carlist">
+                <image src="/assets/images/other/suv.jpg" mode="aspectFill"></image>
+            </navigator>
+        </view>
+        <view class="tabCon-item">
+            <navigator url="/pages/carlist/carlist">
+                <image src="/assets/images/other/suv2.jpg" mode="aspectFill"></image>
+            </navigator>
+        </view>
+        
+        <view class="tabCon-item">
+            <navigator url="/pages/carlist/carlist">
+                <image src="/assets/images/other/jeep.jpg" mode="aspectFill"></image>
+            </navigator>
+        </view>
+        <view class="tabCon-item drink">
+            <navigator url="/pages/carlist/carlist">
+                <view class="carbgText">
+                    <view class="h3">城市代步</view>
+                    <view class="p">妈妈，再也不用担心我挤公交了[3-8万]</view>
+                </view>
+            </navigator>
+        </view>
+        <view class="tabCon-item">
+            <navigator url="/pages/carlist/carlist">
+                <image src="/assets/images/other/jeep2.jpg" mode="aspectFill"></image>
             </navigator>
         </view>
     </view>

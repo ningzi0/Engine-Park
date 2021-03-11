@@ -28,6 +28,7 @@
     "pages/settlement/settlement",
     "pages/bindphone/bindphone",
     "pages/otherphone/otherphone",
+    "pages/carlist/carlist",
     "pages/logs/logs"
   ],
   "window": {
