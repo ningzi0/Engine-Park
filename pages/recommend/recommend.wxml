@@ -54,10 +54,10 @@
 
 
 
-<view class="selectmodel">
+<!-- <view class="selectmodel">
     <navigator class="clearfix" url="/pages/carshow/carshow">
         <text class="f-l">SELECT MODEL</text>
         <text class="f-r">——</text>
     </navigator>
-</view>
+</view> -->
 
