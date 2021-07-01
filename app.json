@@ -29,6 +29,8 @@
     "pages/bindphone/bindphone",
     "pages/otherphone/otherphone",
     "pages/carlist/carlist",
+    "pages/motuo/motuo",
+    "pages/motuoshow/motuoshow",
     "pages/logs/logs"
   ],
   "window": {

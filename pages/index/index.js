@@ -37,6 +37,10 @@ Page({
       menuText:'线上展车厅',
       url:'/pages/recommend/recommend'
     },{
+      menuSrc:'/assets/images/ico/motuo.png',
+      menuText:'引擎机车',
+      url:'/pages/motuo/motuo'
+    },{
       menuSrc:'/assets/images/ico/look.png',
       menuText:'预约看车',
       url:'/pages/lookcar/lookcar'

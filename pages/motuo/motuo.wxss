@@ -1,0 +1,53 @@
+/* pages/motuo/motuo.wxss */
+.motuo .item{
+  border: 1px solid #eee;
+  margin: 0.5em;
+}
+
+.motuo .item image{
+  width: 8em;
+  height: 8em;
+}
+.motuo .item .item-content{
+  display: inline-block;
+  vertical-align: middle;
+}
+.motuo .item .infoText{
+  display: inline-block;
+  vertical-align: middle;
+}
+.motuo .item .infoText text.infoTit{
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.motuo .item text.price{
+  display: block;
+  font-size: 0.9em;
+  padding: 0.2em 0;
+}
+.motuo .item text.price text{
+  color: #ff3c08;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

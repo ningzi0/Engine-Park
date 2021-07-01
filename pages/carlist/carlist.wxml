@@ -41,11 +41,18 @@
                     <view class="cias">CIAS</view>
                 </view>
                 <view class="text">
-                    <view class="h3">{{item.name}} </view>
-                    <view class="data">{{item.info}}</view>
-                    <view class="price">
-                        <view class="del">指导价:{{item.delprice}}万</view>
-                        <view class="carprice">￥{{item.price}}万</view>
+                    <view class="textinfo">
+                        <view class="h3">{{item.name}} </view>
+                        <view class="data">{{item.info}}</view>
+                        <view class="price">
+                            <view class="del">指导价:{{item.delprice}}万</view>
+                            <view class="carprice">￥{{item.price}}万</view>
+                        </view>
+                    </view>
+                    <view class="finance">
+                        <view class="financeCon">
+                            {{item.finance}}
+                        </view>
                     </view>
                 </view>
             </navigator>

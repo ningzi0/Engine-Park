@@ -1,0 +1,130 @@
+<!--pages/carshow/carshow.wxml-->
+<view bindtap='returnPre' >
+    <image src='/assets/images/ico/return.png' mode='aspectFill' class='back-pre'></image>
+</view>
+
+<view class="carshowbanner">
+    <view class="img">
+        <image src="/assets/images/motuo/1.jpg" mode="aspectFill"></image>
+    </view>
+</view>
+
+<view class="introduce">
+    <view class="h1">奥古斯塔 RVS#1</view>
+    <view class="introduceText">RVS代表特殊车辆部门，强调最高等级的艺术设计和工程设计。RVS#1在瓦雷泽Schiranna工厂内全新的「特殊车辆」生产线上进行组装、生产，有着专属的生产线，所有的零件都是经由资深技师之手组装、调整的。</view>
+    <view class="priceBtn">￥228,000</view>
+</view>
+
+
+<view class="carshowCard">
+    <view class="item">
+        <view class="img">
+            <image src="/assets/images/ico/motuo-ico.png" mode="aspectFill"></image>
+        </view>
+        <text>直列三缸四冲程 水冷·800cc</text>
+    </view>
+    <view class="item">
+        <view class="img">
+            <image src="/assets/images/ico/motuo-ico2.png" mode="aspectFill"></image>
+        </view>
+        <text>最高车速(km/h) 280</text>
+    </view>
+    <view class="item">
+        <view class="img">
+            <image src="/assets/images/ico/motuo-ico3.png" mode="aspectFill"></image>
+        </view>
+        <text>水冷</text>
+    </view>
+</view>
+
+
+
+<view class="carparameter">
+    <view class="title clearfix">
+        <text class="f-l">车辆参数：</text>
+        <navigator class="f-r" url="/pages/table/table">更多</navigator>
+    </view>
+
+    <view class="carparameterCon">
+        <view class="ul">
+            <view class="li">√ 品牌：奥古斯塔</view>
+            <view class="li">√ 车型：复古</view>
+            <view class="li">√ 发动机：直列三缸</view>
+            <view class="li">√ 最大马力：140.04</view>
+            <view class="li">√ 最大功率：103/12500</view>
+            <view class="li">√ 最大扭矩：87/10100</view>
+            <view class="li">√ 变速器：国际6档</view>
+            <view class="li">√ 最高车速：280</view>
+        </view>
+    </view>
+
+    <view class="carshowpic">
+        <view class="carshowpicScroll">
+            <view class="pic">
+                <image src="/assets/images/motuo/show1.jpg" mode="aspectFill"></image>
+            </view>
+            <view class="pic">
+                <image src="/assets/images/motuo/show2.jpg" mode="aspectFill"></image>
+            </view>
+            <view class="pic">
+                <image src="/assets/images/motuo/show3.jpg" mode="aspectFill"></image>
+            </view>
+            
+        </view>
+    </view>
+
+
+
+</view>
+
+
+<view class="carshowimg">
+    <view class="title clearfix">
+        <text class="f-l">车辆图片：</text>
+    </view>
+    <view class="carshowimgCon">
+        <view class="p">
+          RVS代表特殊车辆部门，强调最高等级的艺术设计和工程设计。RVS#1在瓦雷泽Schiranna工厂内全新的「特殊车辆」生产线上进行组装、生产，有着专属的生产线，所有的零件都是经由资深技师之手组装、调整的。
+        </view>
+        <image src="/assets/images/motuo/show1.jpg" mode="aspectFill"></image>
+        <view class="p">
+          RVS＃1是特殊车辆部门创建的第一项作品。你可以发现，呈现在这辆车上的是不妥协、极端的表现，他们着手建构一辆真正独特、如同梦想般的的摩托车，它的所有设定，零件质感，整体造型，性能和个性特色都让人始料未及。
+        </view>
+        <image src="/assets/images/motuo/show2.jpg" mode="aspectFill"></image>
+        <view class="p">
+          顶级、限量、手工打造，这些字眼反映每个男人都想收藏一辆为理念打造的摩托车。当然，每一辆RVS#1都有一个限量编号及轻巧的钛合金徽章，安装于车头位置，冲着这个又让人更难抗拒了。原在Dragster上的LED尾灯就有着极佳的辨识度，在RVS #1身上进化后，灯罩部分以烟燻方式处理，更显得RVS #1并不是好惹的对象。
+        </view>
+        <image src="/assets/images/motuo/show3.jpg" mode="aspectFill"></image>
+        <view class="p">
+          油箱与座椅是展现RVS #1极高工艺水平的证据；除了全新设计的彩绘样式之外，在油箱中间的钛合金饰板更是精致夺目。而座椅不仅舒适之外更符合人体工程学。在外观部分，前座车有蜂巢状线条，后座则是RVS #1的精神图腾刺绣，做工极为精致。
+        </view>
+        <image src="/assets/images/motuo/show4.jpg" mode="aspectFill"></image>
+        
+    </view>
+
+
+
+</view>
+
+
+
+
+
+    <!-- 客服和收藏 -->
+    <view class="service">
+        <view class="shoucang item">
+            <!-- 未收藏时显示的图片 -->
+            <view catchtap="handleCollection" wx:if="{{!isCollected}}">
+                <image src="/assets/images/ico/shoucang.png"></image>
+            </view>
+            <!-- 收藏时显示的图片 -->
+            <view catchtap="handleCollection" wx:if="{{isCollected}}">
+                <image src="/assets/images/ico/shoucang-active.png"></image>
+            </view>
+        </view>
+        <view class="kefu item">
+            <button open-type="contact" bindcontact="handleContact">
+                <image src="/assets/images/ico/kefu.png"></image>
+            </button>
+        </view>
+    </view>

@@ -6,7 +6,7 @@
 <view class="carshowbanner">
     <view class="img">
         <image src="/assets/images/other/carshow1.jpg" mode="aspectFill"></image>
-        <image class="img2" src="/assets/images/other/carshow2.png" mode="aspectFill"></image>
+        <image class="img2" src="/assets/images/other/carshow3.png" mode="aspectFill"></image>
     </view>
 </view>
 
@@ -76,6 +76,18 @@
             <view class="pic">
                 <image src="/assets/images/other/carshow5.jpg" mode="aspectFill"></image>
             </view>
+            <view class="pic">
+                <image src="/assets/images/other/carshow5.jpg" mode="aspectFill"></image>
+            </view>
+            <view class="pic">
+                <image src="/assets/images/other/carshow5.jpg" mode="aspectFill"></image>
+            </view>
+            <view class="pic">
+                <image src="/assets/images/other/carshow5.jpg" mode="aspectFill"></image>
+            </view>
+            <view class="pic">
+                <image src="/assets/images/other/carshow5.jpg" mode="aspectFill"></image>
+            </view>
         </view>
     </view>
 
@@ -118,9 +130,21 @@
         <text class="f-l">车辆图片：</text>
     </view>
     <view class="carshowimgCon">
+        <view class="p">
+            豪华和紧凑型混合动力车，五门紧凑型城市SUV结合了精致的都市外观，独特的雷克萨斯工艺和最先进的技术。
+        </view>
         <image src="https://img4.bitautoimg.com/autoalbum/files/20180727/121/20180727133227322755308_6158003_16.jpg" mode="aspectFill"></image>
+        <view class="p">
+            豪华和紧凑型混合动力车，五门紧凑型城市SUV结合了精致的都市外观，独特的雷克萨斯工艺和最先进的技术。
+        </view>
         <image src="https://img3.bitautoimg.com/autoalbum/files/20180727/280/20180727133226322628296_6158002_16.jpg" mode="aspectFill"></image>
+        <view class="p">
+            豪华和紧凑型混合动力车，五门紧凑型城市SUV结合了精致的都市外观，独特的雷克萨斯工艺和最先进的技术。
+        </view>
         <image src="https://img2.bitautoimg.com/autoalbum/files/20180727/336/20180727133230323068303_6158001_16.jpg" mode="aspectFill"></image>
+        <view class="p">
+            豪华和紧凑型混合动力车，五门紧凑型城市SUV结合了精致的都市外观，独特的雷克萨斯工艺和最先进的技术。
+        </view>
         <image src="https://img1.bitautoimg.com/autoalbum/files/20180727/463/2018072713321332134297_6158000_16.jpg" mode="aspectFill"></image>
         <image src="https://img4.bitautoimg.com/autoalbum/files/20180727/810/201807271332263226185311_6157999_16.jpg" mode="aspectFill"></image>
         <image src="https://img3.bitautoimg.com/autoalbum/files/20180727/010/201807271332283228174303_6157998_16.jpg" mode="aspectFill"></image>
@@ -146,4 +170,30 @@
         <image src="https://img4.bitautoimg.com/autoalbum/files/20180727/504/201807271336133613250281_6158171_16.jpg" mode="aspectFill"></image>
         <image src="https://img3.bitautoimg.com/autoalbum/files/20180727/234/201807271336153615164311_6158170_16.jpg" mode="aspectFill"></image>
     </view>
+
+
+
 </view>
+
+
+
+
+
+    <!-- 客服和收藏 -->
+    <view class="service">
+        <view class="shoucang item">
+            <!-- 未收藏时显示的图片 -->
+            <view catchtap="handleCollection" wx:if="{{!isCollected}}">
+                <image src="/assets/images/ico/shoucang.png"></image>
+            </view>
+            <!-- 收藏时显示的图片 -->
+            <view catchtap="handleCollection" wx:if="{{isCollected}}">
+                <image src="/assets/images/ico/shoucang-active.png"></image>
+            </view>
+        </view>
+        <view class="kefu item">
+            <button open-type="contact" bindcontact="handleContact">
+                <image src="/assets/images/ico/kefu.png"></image>
+            </button>
+        </view>
+    </view>

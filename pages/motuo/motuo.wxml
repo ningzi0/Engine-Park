@@ -1,0 +1,47 @@
+<view class="motuo">
+  <block wx:for="{{menuArray}}">
+        <view class="item">
+            <navigator url="{{item.url}}" hover-class="none">
+                <view class="item-content">
+                    <view class="item-color">
+                        <image src="{{item.menuSrc}}" mode="aspectFill"></image>
+                    </view>
+                </view>
+                <view class="infoText">
+                    <text class="infoTit">{{item.menuText}}</text>
+                    <text class="price">指导价：<text>￥{{item.price}}</text></text>
+                </view>
+            </navigator>
+        </view>
+  </block>
+</view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

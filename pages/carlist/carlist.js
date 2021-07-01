@@ -58,6 +58,7 @@ Page({
       imgSrc:'/assets/images/other/carshow4.jpg',
       name:'雷克萨斯GS2016款300H领先版',
       info:'2018年|2.0万公里|国五',
+      finance:'首付4.8万 | 月供2500 | 日供250',
       delprice:'42.8',
       price:'38.18'
     },
@@ -65,6 +66,7 @@ Page({
       imgSrc:'/assets/images/other/mytopbg.jpg',
       name:'雷克萨斯ES 2014款 300h 精英版',
       info:'2014年|5.0万公里|国五',
+      finance:'首付4.8万 | 月供2500 | 日供250',
       delprice:'34.8',
       price:'24.88'
     },
@@ -72,6 +74,7 @@ Page({
       imgSrc:'/assets/images/other/jeep.jpg',
       name:'Jeep 牧马人 2014款 3.0L 四门版 Sahara',
       info:'2015年|5.0万公里|国五',
+      finance:'首付4.8万 | 月供2500 | 日供250',
       delprice:'52.3',
       price:'38.8'
     },
@@ -79,6 +82,7 @@ Page({
       imgSrc:'/assets/images/other/jeep2.jpg',
       name:'Jeep 指南者 2017款 200T 自动驭享版',
       info:'2017年|5.0万公里|国五',
+      finance:'首付4.8万 | 月供2500 | 日供250',
       delprice:'45.8',
       price:'21.8'
     }],

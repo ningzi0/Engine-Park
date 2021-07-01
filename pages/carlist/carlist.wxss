@@ -60,11 +60,13 @@
 }
 .listCon .ul .li .text{
   text-align: left;
-  padding:0.5em 0.5em;
+  padding:0;
   position: absolute;
   bottom:0;
   background-color: rgba(0, 0, 0, 0.596);
   color: #fff;
+  box-sizing: border-box;
+  width: 100%;
 }
 /* .listCon .ul .li .text .h3{
   font-size: 1.2em;
@@ -393,10 +395,12 @@
 
 
 .listCon .ul .li .text .h3{
-  height: 3em;
+  height: 1.5em;
   overflow: hidden;
   line-height: 1.5;
   margin-bottom: 0.5em;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 
@@ -420,6 +424,22 @@
   background-color: #fff;
 }
 
+
+
+
+
+/*金融方案*/
+.financeCon{
+  font-size: 0.75em;
+  color: #fff;
+  border-top: 1px solid rgba(238, 238, 238, 0.192);
+  padding: 0.5em 0;
+  background: #ff9100;
+  text-align: center;
+}
+.textinfo{
+  padding: 0.5em;
+}
 
 
 
