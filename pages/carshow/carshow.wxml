@@ -17,6 +17,33 @@
 </view>
 
 
+
+<!-- 金融方案 开始 -->
+<view class="finance">
+    <view class="finance_title">金融方案</view>
+    <view class="finance_p">金融方案仅供参考，具体请与销售顾问详细沟通</view>
+    <view class="finance_con">
+        <view class="finance_c_item">
+            <view class="text">首付(万元)</view>
+            <view class="finance_price">4.48万</view>
+        </view>
+        <view class="finance_c_item">
+            <view class="text">月供(元)</view>
+            <view class="finance_price">2500元</view>
+        </view>
+        <view class="finance_c_item">
+            <view class="text">日供(元)</view>
+            <view class="finance_price">250元</view>
+        </view>
+    </view>
+</view>
+
+
+<!-- 金融方案 结束 -->
+
+
+
+
 <view class="carshowCard">
     <view class="item">
         <view class="img">

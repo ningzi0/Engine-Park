@@ -167,3 +167,39 @@
 }
 
 
+/* 金融方案  样式开始 */
+.finance{
+  text-align: center;
+  padding: 1em;
+  margin: 0.75em;
+  border: 1px solid #eee;
+}
+.finance_p{
+  font-size: 0.8em;
+  background: #f3f3f3;
+  color: #939393;
+  padding: 0.75em;
+  margin: 0.5em 0;
+}
+.finance_con{
+  display: flex;
+  background: #f3f3f3;
+  padding: 0.75em;
+  font-size: 0.95em;
+}
+.finance_c_item{
+  flex: 1;
+  color: #606060;
+  border-right: 1px solid #e6e6e6;
+}
+.finance_c_item:last-child{
+  border-right: 0;
+}
+.finance_price{
+  color: #efac37;
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-top: 0.5em;
+}
+
+/* 金融方案 样式结束 */
